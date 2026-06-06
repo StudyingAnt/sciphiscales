@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>과학철학 성향 테스트 — SciPhiScales</title>
-<meta name="description" content="실재론에서 다원주의까지, 푸앵카레부터 장하석까지. 42개 명제로 당신의 과학관을 일곱 축에 놓고 가장 가까운 과학철학자를 찾아드립니다.">
+<meta name="description" content="어려운 용어 없이 쉽게. 42개 질문으로 당신의 과학관을 일곱 축에 놓고 가장 가까운 과학철학자를 찾아드립니다.">
 <!-- Open Graph (Threads / Facebook / KakaoTalk 등) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://studyingant.github.io/sciphiscales/">
 <meta property="og:title" content="과학철학 성향 테스트 — SciPhiScales">
-<meta property="og:description" content="실재론에서 다원주의까지, 푸앵카레부터 장하석까지. 42개 명제로 당신의 과학관을 일곱 축에 놓고 가장 가까운 과학철학자를 찾아드립니다.">
+<meta property="og:description" content="어려운 용어 없이 쉽게. 42개 질문으로 당신의 과학관을 일곱 축에 놓고 가장 가까운 과학철학자를 찾아드립니다.">
 <meta property="og:image" content="https://studyingant.github.io/sciphiscales/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -18,7 +18,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="과학철학 성향 테스트 — SciPhiScales">
-<meta name="twitter:description" content="42개 명제로 당신의 과학관을 일곱 축에 놓고 가장 가까운 과학철학자를 찾아드립니다.">
+<meta name="twitter:description" content="어려운 용어 없이 쉽게. 42개 질문으로 당신의 과학관을 알아보세요.">
 <meta name="twitter:image" content="https://studyingant.github.io/sciphiscales/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,11 +45,9 @@
   }
   .wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:20px 22px 90px}
   .serif{font-family:"Noto Serif KR",serif}
-
   .langbar{display:flex;justify-content:flex-end;gap:6px;margin-bottom:14px}
   .langbtn{font-family:"Noto Serif KR",serif;font-size:12.5px;cursor:pointer;background:transparent;border:1.4px solid var(--line);color:var(--ink-soft);border-radius:99px;padding:5px 13px;transition:all .15s}
   .langbtn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-
   .kicker{font-family:"Noto Serif KR",serif;letter-spacing:.32em;font-size:12px;color:var(--ochre);text-transform:uppercase;font-weight:600}
   h1{font-family:"Fraunces","Noto Serif KR",serif;font-weight:900;font-size:clamp(34px,7vw,58px);line-height:1.08;margin:.18em 0 .12em;letter-spacing:-.01em}
   h1 .em{color:var(--ochre)}
@@ -67,19 +65,13 @@
   .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px var(--shadow)}
   .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
   .btn.ochre{background:var(--ochre)}
-  .btn.sm{padding:11px 20px;font-size:15px}
   .note{font-size:12.5px;color:var(--ink-soft);margin-top:14px;max-width:62ch}
-
   .progress-shell{height:5px;background:var(--paper-deep);border-radius:99px;overflow:hidden;margin:6px 0 4px}
   .progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--ochre),var(--ochre-bright));transition:width .35s ease}
   .qcount{font-size:12.5px;letter-spacing:.18em;color:var(--ochre);font-weight:600;font-family:"Noto Serif KR",serif}
   .qcard{margin-top:18px;min-height:200px}
   .qnum{font-family:"Noto Serif KR",serif;font-size:13px;color:var(--ink-soft)}
-  .qtext{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,4.4vw,26px);line-height:1.5;margin:6px 0 12px}
-  .fnote{border-left:2.5px solid var(--ochre);background:rgba(176,106,44,.06);padding:9px 13px;border-radius:0 3px 3px 0;font-size:12.8px;color:var(--ink-soft);margin:0 0 18px;line-height:1.6}
-  .fnote b{color:var(--ochre);font-weight:700}
-  .fnote .fi{display:block;margin-top:3px}
-  .fnote .fi:first-child{margin-top:0}
+  .qtext{font-family:"Noto Serif KR",serif;font-weight:600;font-size:clamp(20px,4.4vw,26px);line-height:1.55;margin:6px 0 18px}
   .likert{display:grid;gap:10px}
   .lk{text-align:left;cursor:pointer;border:1.5px solid var(--line);background:rgba(255,255,255,.25);border-radius:3px;padding:13px 16px;font-size:15.5px;color:var(--ink);display:flex;align-items:center;gap:13px;transition:all .14s ease;font-family:"Noto Sans KR",sans-serif}
   .lk:hover{border-color:var(--ink);background:rgba(255,255,255,.5);transform:translateX(3px)}
@@ -90,7 +82,6 @@
   .navrow{display:flex;justify-content:space-between;margin-top:22px}
   .link-btn{background:none;border:0;color:var(--ink-soft);cursor:pointer;font-size:14px;text-decoration:underline;font-family:inherit;padding:8px 4px}
   .link-btn[disabled]{opacity:.3;cursor:default;text-decoration:none}
-
   .reveal{opacity:0;transform:translateY(14px);animation:rise .6s ease forwards}
   @keyframes rise{to{opacity:1;transform:none}}
   .type-badge{text-align:center;padding:8px 0 4px}
@@ -159,7 +150,6 @@
     <div class="qcard">
       <div class="qnum" id="qnum"></div>
       <div class="qtext serif" id="qtext"></div>
-      <div class="fnote hidden" id="fnote"></div>
       <div class="likert" id="likert"></div>
     </div>
     <div class="navrow">
@@ -179,45 +169,45 @@ const U={
  ko:{
   kicker:"SciPhiScales · 과학철학 성향 테스트",
   h1:`당신은 과학을<br><span class="em">어떻게</span> 믿는가`,
-  sub:"실재론에서 다원주의까지, 푸앵카레부터 장하석까지. 42개의 명제에 답하면 당신의 과학관이 일곱 개의 축 위에 놓이고, 가장 가까운 과학철학자가 드러납니다.",
+  sub:"어려운 용어는 빼고 쉽게. 42개의 질문에 답하면 당신의 과학관이 일곱 개의 축 위에 놓이고, 생각이 가장 비슷한 과학철학자가 드러납니다.",
   axesHead:"측정하는 일곱 축",
-  meta:`<span><b>42</b> 문항</span><span><b>5</b> 점 척도</span><span><b>17</b> 인의 철학자</span><span>약 <b>7–10</b> 분</span>`,
+  meta:`<span><b>42</b> 문항</span><span><b>5</b> 점 척도</span><span><b>17</b> 인의 철학자</span><span>약 <b>6–8</b> 분</span>`,
   start:"테스트 시작 →",
-  note:"각 문항이 어떤 철학자의 명제인지는 끝까지 숨겨지며, 결과 화면에서 전부 공개됩니다. 문항은 직접 인용이 아니라 입장을 옮긴 의역입니다. 즉각적 직관으로 답하실수록 정확합니다.",
-  qOf:"문항 {a} / {b}", terms:"용어", prev:"← 이전", top:"처음으로", restartConfirm:"처음부터 다시 시작할까요?",
-  yourTypeKick:"당신의 유형", axesSec:"일곱 축 위의 당신", closeSec:"가장 가까운 철학자", simLabel:"근접도",
+  note:"각 문항이 어떤 철학자의 생각인지는 끝까지 숨겨지며, 결과 화면에서 전부 공개됩니다. 문항은 어려운 용어 없이 쉽게 풀어 썼습니다. 깊이 고민하기보다 즉각적인 직감으로 답하실수록 정확합니다.",
+  qOf:"문항 {a} / {b}", prev:"← 이전", top:"처음으로", restartConfirm:"처음부터 다시 시작할까요?",
+  yourTypeKick:"당신의 유형", axesSec:"일곱 축 위의 당신", closeSec:"생각이 가장 비슷한 철학자", simLabel:"근접도",
   calibSec:"참고 — 철학자 표본과의 비교",
   calibLead:"2020년 PhilPapers Survey에서 직업 철학자의 <b>약 70%</b>가 과학적 실재론, 15%가 반실재론, 14%가 그 구분 자체를 거부했습니다.",
   calibYou:"당신의 실재론 축은 <b>실재론 {p}% · 반실재론 {n}%</b>로 측정되었습니다.",
   calibSame:"다수 철학자와 같은 방향이되, 진리관·다원성 축에서 표준 실재론과 갈릴 수 있습니다.",
   calibOpp:"철학자 다수와는 반대 방향으로, 경험론·실용주의 전통에 더 가깝습니다.",
   apxSummary:"문항 출처 전체 공개 (당신의 응답과 함께)",
-  apxDisc:"※ 모든 문항은 직접 인용이 아니라 해당 입장을 옮긴 의역입니다. 일부는 유명한 정식 표현을 의도적으로 반영했습니다.",
+  apxDisc:"※ 모든 문항은 직접 인용이 아니라, 철학자의 입장을 누구나 알기 쉽게 풀어 쓴 것입니다. 원래 주장은 이보다 훨씬 정교합니다.",
   copy:"요약 텍스트 복사", shareLink:"결과 링크 복사", saveImage:"결과 이미지 저장", again:"다시 하기",
   sharedNote:"공유된 결과를 보고 있습니다. 문항 출처는 직접 풀어야 공개됩니다.", tryIt:"직접 해보기 →",
   foot:`SciPhiScales — 재미를 위한 자기평가 도구이며 학술적 진단이 아닙니다. 철학자 좌표는 해석적 근사치입니다.`,
   copied:"요약을 복사했습니다", linkCopied:"결과 링크를 복사했습니다", imgSaved:"결과 이미지를 저장했습니다",
   copyFail:"복사에 실패했습니다", imgFail:"이미지 생성에 실패했습니다",
-  copyTitle:"[과학철학 성향 테스트]", copyType:"나의 유형", copyClose:"가장 가까운 철학자",
+  copyTitle:"[과학철학 성향 테스트]", copyType:"나의 유형", copyClose:"생각이 가장 비슷한 철학자",
   likert:["매우 동의","동의","중립 · 모름","반대","매우 반대"],
  },
  en:{
   kicker:"SciPhiScales · Philosophy-of-Science Profile",
   h1:`How Do You<br><span class="em">Believe</span> in Science?`,
-  sub:"From realism to pluralism, from Poincaré to Hasok Chang. Answer 42 statements and your view of science is placed on seven axes—and the philosopher closest to you is revealed.",
+  sub:"Plain words, no jargon. Answer 42 questions and your view of science is placed on seven axes—and the philosopher who thinks most like you is revealed.",
   axesHead:"The Seven Axes",
-  meta:`<span><b>42</b> items</span><span><b>5</b>-point scale</span><span><b>17</b> philosophers</span><span>≈ <b>7–10</b> min</span>`,
+  meta:`<span><b>42</b> items</span><span><b>5</b>-point scale</span><span><b>17</b> philosophers</span><span>≈ <b>6–8</b> min</span>`,
   start:"Begin the test →",
-  note:"Which philosopher each item comes from is hidden throughout and revealed only in the results. The statements are paraphrases of positions, not direct quotations. Answer by gut intuition for best accuracy.",
-  qOf:"Item {a} / {b}", terms:"Terms", prev:"← Back", top:"Start over", restartConfirm:"Start over from the beginning?",
-  yourTypeKick:"Your Type", axesSec:"You on the Seven Axes", closeSec:"Closest Philosophers", simLabel:"match",
+  note:"Which philosopher each item comes from stays hidden until the results. Items are written in plain language with no jargon. Answer by quick gut feeling rather than overthinking for the most accurate result.",
+  qOf:"Item {a} / {b}", prev:"← Back", top:"Start over", restartConfirm:"Start over from the beginning?",
+  yourTypeKick:"Your Type", axesSec:"You on the Seven Axes", closeSec:"Philosophers Who Think Most Like You", simLabel:"match",
   calibSec:"For Reference — vs. the Philosopher Sample",
   calibLead:"In the 2020 PhilPapers Survey, <b>about 70%</b> of professional philosophers favored scientific realism, 15% anti-realism, and 14% rejected the distinction itself.",
   calibYou:"Your realism axis reads <b>Realism {p}% · Anti-realism {n}%</b>.",
   calibSame:"That puts you on the same side as most philosophers—though you may diverge from standard realism on the truth and pluralism axes.",
   calibOpp:"That is the opposite side from most philosophers, closer to the empiricist and pragmatist traditions.",
   apxSummary:"Full source disclosure (with your answers)",
-  apxDisc:"※ Every item is a paraphrase of the position, not a direct quotation. A few deliberately echo famous canonical phrasings.",
+  apxDisc:"※ Every item is not a direct quote but a plain-language rendering of the position, made easy to follow. The original arguments are far more refined.",
   copy:"Copy summary text", shareLink:"Copy result link", saveImage:"Save result image", again:"Take it again",
   sharedNote:"You're viewing a shared result. Item sources are revealed only when you take it yourself.", tryIt:"Take it yourself →",
   foot:`SciPhiScales — a self-assessment for fun, not an academic diagnosis. Philosopher coordinates are interpretive approximations.`,
@@ -230,124 +220,100 @@ const U={
 
 /* ===================== AXES ===================== */
 const AXES={
- realism:  {neg:{ko:"반실재론",en:"Anti-realism"}, pos:{ko:"실재론",en:"Realism"}, gloss:{ko:"성공한 이론의 관측불가능자는 실재하는가, 아니면 경험적 도구일 뿐인가",en:"Are the unobservables of successful theories real, or merely useful instruments?"}},
- truth:    {neg:{ko:"실용·정합적 진리",en:"Pragmatic / coherence truth"}, pos:{ko:"대응적 진리",en:"Correspondence truth"}, gloss:{ko:"진리는 정신독립적 대응인가, 조작적 정합성·유용성인가",en:"Is truth mind-independent correspondence, or operational coherence / usefulness?"}},
- progress: {neg:{ko:"불연속·공약불가능",en:"Discontinuity / incommensurability"}, pos:{ko:"수렴적 진보",en:"Convergent progress"}, gloss:{ko:"진보는 진리로의 수렴인가, 실천의 확장·패러다임 전환인가",en:"Is progress convergence on truth, or expansion of practice / paradigm shifts?"}},
- method:   {neg:{ko:"무방법·맥락주의",en:"No-method / contextualism"}, pos:{ko:"방법 규칙주의",en:"Rule-governed method"}, gloss:{ko:"합리성을 지배하는 고정된 과학적 방법이 있는가",en:"Is there a fixed scientific method that governs rationality?"}},
- plurality:{neg:{ko:"다원주의",en:"Pluralism"}, pos:{ko:"일원론",en:"Monism"}, gloss:{ko:"통일된 단일 과학상인가, 누더기(dappled) 세계인가",en:"One unified picture of science, or a dappled, patchwork world?"}},
- practice: {neg:{ko:"실험·개입 중심",en:"Experiment / intervention-centered"}, pos:{ko:"이론 중심",en:"Theory-centered"}, gloss:{ko:"표상이 일차적인가, 실험·개입·실천이 일차적·자율적인가",en:"Is representation primary, or are experiment, intervention, and practice primary and autonomous?"}},
- values:   {neg:{ko:"가치적재",en:"Value-laden"}, pos:{ko:"가치무관 객관성",en:"Value-free objectivity"}, gloss:{ko:"좋은 과학은 가치중립이어야 하는가, 비인식적 가치는 불가피한가",en:"Should good science be value-neutral, or are non-epistemic values ineliminable?"}},
+ realism:  {neg:{ko:"반실재론",en:"Anti-realism"}, pos:{ko:"실재론",en:"Realism"}, gloss:{ko:"눈에 안 보이는 것(전자·유전자 등)이 진짜 존재한다고 보는가, 아니면 쓸모 있는 도구로만 보는가",en:"Do unseen things (electrons, genes) really exist, or are they just useful tools?"}},
+ truth:    {neg:{ko:"실용·정합적 진리",en:"Pragmatic / coherence truth"}, pos:{ko:"대응적 진리",en:"Correspondence truth"}, gloss:{ko:"진리는 '실제 세상과 들어맞음'인가, '써먹어 보니 잘 통함'인가",en:"Is truth 'matching the real world,' or 'what works when you use it'?"}},
+ progress: {neg:{ko:"불연속·단절",en:"Discontinuity"}, pos:{ko:"수렴적 진보",en:"Convergent progress"}, gloss:{ko:"과학은 진리에 점점 다가가는가, 아니면 큰 전환을 거치며 다룰 수 있는 일이 늘어나는가",en:"Does science move closer to truth, or expand what we can do through big shifts?"}},
+ method:   {neg:{ko:"정해진 방법 없음",en:"No fixed method"}, pos:{ko:"방법 규칙주의",en:"Rule-governed method"}, gloss:{ko:"모든 경우에 통하는 단 하나의 과학 방법이 있는가",en:"Is there one scientific method that works in every case?"}},
+ plurality:{neg:{ko:"다원주의",en:"Pluralism"}, pos:{ko:"하나로 통합",en:"Monism"}, gloss:{ko:"세상에 대한 단 하나의 통합된 설명이 있는가, 분야마다 다른 조각보인가",en:"Is there one unified account of the world, or a patchwork that differs by field?"}},
+ practice: {neg:{ko:"실험·해보기 중심",en:"Experiment-centered"}, pos:{ko:"이론 중심",en:"Theory-centered"}, gloss:{ko:"이론·표현이 먼저인가, 직접 해보고 만지는 실험·실천이 먼저인가",en:"Does theory come first, or hands-on experiment and practice?"}},
+ values:   {neg:{ko:"가치가 섞임",en:"Value-laden"}, pos:{ko:"가치와 무관",en:"Value-free"}, gloss:{ko:"좋은 과학은 가치와 무관해야 하는가, 가치는 어차피 끼어드는가",en:"Should good science be free of values, or do values inevitably enter?"}},
 };
 const AXIS_KEYS=Object.keys(AXES);
 
-/* ===================== GLOSSARY ===================== */
-const G={
- unobservable:{t:{ko:"관측불가능자",en:"Unobservables"},d:{ko:"전자·유전자처럼 직접 눈으로 볼 수 없는 이론적 대상.",en:"Theoretical entities, like electrons or genes, that can't be seen directly."}},
- empirical_adequacy:{t:{ko:"경험적 적합성",en:"Empirical adequacy"},d:{ko:"이론이 참인지와 무관하게, 관측 가능한 현상에 들어맞는 정도.",en:"How well a theory fits observable phenomena, regardless of whether it is true."}},
- meta_induction:{t:{ko:"비관적 메타귀납",en:"Pessimistic meta-induction"},d:{ko:"과거의 성공한 이론들이 거짓이었으니 지금 이론도 그러리라는 귀납.",en:"The inference that since past successful theories turned out false, current ones likely will too."}},
- structural:{t:{ko:"구조적 실재론",en:"Structural realism"},d:{ko:"이론이 바뀌어도 보존되는 수학적 관계 구조만은 실재에 대응한다는 입장.",en:"The view that only the mathematical structure preserved across theory change corresponds to reality."}},
- convention:{t:{ko:"규약",en:"Convention"},d:{ko:"경험으로 정해지지 않고 편의상 약속으로 채택하는 것.",en:"Something adopted by convenient agreement rather than fixed by experience."}},
- operational_coherence:{t:{ko:"조작적 정합성",en:"Operational coherence"},d:{ko:"한 실천 안의 조작·절차들이 서로 어긋나지 않고 잘 맞물려 작동함.",en:"When the operations within a practice fit together and work without contradiction."}},
- verisimilitude:{t:{ko:"진리유사도",en:"Verisimilitude"},d:{ko:"이론이 진리에 얼마나 가까운지의 정도.",en:"The degree to which a theory approaches the truth."}},
- incommensurability:{t:{ko:"공약 불가능성",en:"Incommensurability"},d:{ko:"두 이론·패러다임을 함께 잴 공통의 잣대가 없어 직접 우열을 비교할 수 없음.",en:"The lack of a common measure for comparing two paradigms, so neither can be directly ranked above the other."}},
- research_programme:{t:{ko:"연구 프로그램",en:"Research programme"},d:{ko:"핵심 가정과 그것을 지키는 보조가설들의 묶음; 새 사실을 예측하면 ‘전진적’, 사후 땜질만 하면 ‘퇴행적’.",en:"A hard core of assumptions plus protective auxiliary hypotheses; 'progressive' if it predicts novel facts, 'degenerating' if it only patches up afterward."}},
- tacit:{t:{ko:"암묵지",en:"Tacit knowledge"},d:{ko:"말이나 규칙으로 다 옮길 수 없는, 몸에 밴 노하우.",en:"Embodied know-how that cannot be fully put into words or rules."}},
- holism:{t:{ko:"검증의 전체론",en:"Confirmation holism"},d:{ko:"가설은 홀로가 아니라 배경 가정 전체와 함께서만 시험된다는 입장.",en:"The view that a hypothesis is tested only together with a whole web of background assumptions, never alone."}},
- theory_laden:{t:{ko:"관찰의 이론적재성",en:"Theory-ladenness"},d:{ko:"무엇을 어떻게 보는지가 이미 이론에 의해 형성되어, 순수하게 중립적인 관찰은 없다는 생각.",en:"The idea that what and how we observe is already shaped by theory, so no observation is purely neutral."}},
- reductionism:{t:{ko:"환원주의",en:"Reductionism"},d:{ko:"상위 분과의 현상을 하위 분과(궁극적으로 물리학)로 설명·환원할 수 있다는 입장.",en:"The view that higher-level phenomena can be explained by and reduced to lower levels (ultimately physics)."}},
- dappled:{t:{ko:"누더기(dappled)",en:"Dappled world"},d:{ko:"세계가 하나의 보편 법칙이 아니라 국소적으로만 통하는 법칙들의 조각보라는 비유.",en:"A metaphor that the world is a patchwork of locally valid laws rather than one universal law."}},
- natural_kinds:{t:{ko:"자연종 · 자연의 마디",en:"Natural kinds / joints of nature"},d:{ko:"인간의 분류와 독립적으로 실재하는 ‘종류’; 올바른 분류는 그 마디를 따라 자른다.",en:"Kinds that exist independently of human classification; correct taxonomy 'carves nature at its joints.'"}},
- system_of_practice:{t:{ko:"실천 체계",en:"System of practice"},d:{ko:"지식의 단위를 명제가 아니라 정합적으로 수행 가능한 활동·조작의 묶음으로 보는 개념.",en:"Treating the unit of knowledge as a bundle of coherently performable activities, not propositions."}},
- semantic_view:{t:{ko:"의미론적(모형) 견해",en:"Semantic / model view"},d:{ko:"이론을 문장들의 집합이 아니라 현상을 표상하는 ‘모형’들의 모음으로 보는 견해.",en:"Viewing a theory as a collection of representational 'models' rather than a set of sentences."}},
- construction:{t:{ko:"사회적 구성",en:"Social construction"},d:{ko:"사실이 실험실의 물질적·사회적 배치 속에서 만들어진다고 보는 관점.",en:"The view that facts are produced within the material and social arrangements of the lab."}},
- non_epistemic:{t:{ko:"비인식적 가치",en:"Non-epistemic values"},d:{ko:"진리·정합성 같은 인식적 가치가 아닌 윤리·사회·정치적 가치.",en:"Ethical, social, or political values, as opposed to epistemic ones like truth or consistency."}},
- inductive_risk:{t:{ko:"귀납적 위험",en:"Inductive risk"},d:{ko:"가설을 받아들이거나 기각할 때 틀릴 위험과 그 결과의 경중.",en:"The risk of being wrong in accepting or rejecting a hypothesis, and how grave the consequences are."}},
-};
-
-/* ===================== QUESTIONS ===================== */
+/* ===================== QUESTIONS (plain language) ===================== */
 const Q=[
- {t:{ko:`성숙한 이론의 경험적 성공은, 그 이론이 적어도 근사적으로 참이고 그것이 상정하는 관측불가능자가 실재한다고 보지 않으면 기적처럼 보일 것이다.`,en:`The empirical success of a mature theory would look like a miracle unless the theory were at least approximately true and the unobservables it posits were real.`}, src:{ko:["퍼트넘·보이드","‘기적은 없다’ 논증"],en:["Putnam & Boyd","No-Miracles Argument"]}, eff:{realism:2}, g:["unobservable"]},
- {t:{ko:`이론에 합리적으로 요구할 수 있는 것은 진리가 아니라 ‘경험적 적합성’뿐이다. 이론을 받아들임은 참이라 믿음이 아니라 관측가능한 현상에 들어맞음을 인정함이다.`,en:`All we can rationally demand of a theory is "empirical adequacy," not truth. To accept a theory is to grant that it fits the observable phenomena—not to believe it true.`}, src:{ko:["반 프라센","구성적 경험론"],en:["van Fraassen","Constructive Empiricism"]}, eff:{realism:-2}, g:["empirical_adequacy"]},
- {t:{ko:`과학사는 한때 성공했으나 거짓으로 판명된 이론들(열소·에테르)로 가득하다. 따라서 지금의 성공한 이론이 참이라 믿을 근거도 약하다.`,en:`The history of science is full of once-successful theories now known to be false (caloric, ether). So we have little ground to believe our current successful theories are true either.`}, src:{ko:["라우든","비관적 메타귀납"],en:["Laudan","Pessimistic Meta-Induction"]}, eff:{realism:-2,progress:-1}, g:["meta_induction"]},
- {t:{ko:`이론 전체의 참 여부는 몰라도, 그것이 포착한 ‘구조’(수학적 관계)는 이론 변화를 가로질러 보존되며 그만큼은 실재에 대응한다.`,en:`Even if a theory as a whole isn't true, the "structure" (the mathematical relations) it captures is preserved across theory change and to that extent corresponds to reality.`}, src:{ko:["워럴","구조적 실재론"],en:["Worrall","Structural Realism"]}, eff:{realism:1,truth:1}, g:["structural"]},
- {t:{ko:`관측가능/불가능의 경계는 인간 감각기관의 우연한 한계일 뿐, 존재론적으로 의미 있는 선이 아니다. 전자도 탁자만큼 실재한다.`,en:`The observable/unobservable boundary is just a contingent limit of human sense organs, not an ontologically meaningful line. Electrons are as real as tables.`}, src:{ko:["그로버 맥스웰","관측불가능성 비판"],en:["Grover Maxwell","Critique of (Un)observability"]}, eff:{realism:2}},
- {t:{ko:`성공한 과학은 비록 진술이 늘 수정 가능할지라도 세계의 인과 구조를 점점 더 정확히 드러낸다.`,en:`Successful science reveals the world's causal structure ever more accurately, even though our statements are always open to revision.`}, src:{ko:["실로스","과학적 실재론"],en:["Psillos","Scientific Realism"]}, eff:{realism:1,progress:1}},
- {t:{ko:`참된 명제란 실재와 대응하는 명제다. 진리는 우리의 믿음이나 그것의 유용성과는 독립적이다.`,en:`A true proposition is one that corresponds to reality. Truth is independent of our beliefs or of how useful the proposition is.`}, src:{ko:["대응설 전통","러셀 등"],en:["Correspondence tradition","Russell et al."]}, eff:{truth:2}},
- {t:{ko:`어떤 관념의 ‘참’은 그것이 우리의 경험을 성공적으로 이끄는 한에서의 참이다. 진리는 검증 과정에서 관념에게 ‘일어나는’ 사건이다.`,en:`An idea is "true" just insofar as it successfully guides our experience. Truth is something that happens to an idea in the process of verification.`}, src:{ko:["윌리엄 제임스","실용주의 진리관"],en:["William James","Pragmatist Theory of Truth"]}, eff:{truth:-2}},
- {t:{ko:`기하학의 공리는 경험적으로 참이거나 거짓인 것이 아니라, 우리가 편의에 따라 채택하는 규약이다.`,en:`The axioms of geometry are not empirically true or false; they are conventions we adopt for convenience.`}, src:{ko:["푸앵카레","규약주의"],en:["Poincaré","Conventionalism"]}, eff:{truth:-2,realism:-1}, g:["convention"]},
- {t:{ko:`‘물은 H₂O인가’를 단일한 참/거짓으로 물을 수 없다. 서로 다른 실천 체계에서 각기 조작적으로 정합적인 복수의 답이 성립한다.`,en:`We cannot ask whether "water is H₂O" as a single true/false question. Different systems of practice can each yield their own operationally coherent answer.`}, src:{ko:["장하석","Is Water H2O?"],en:["Hasok Chang","Is Water H2O?"]}, eff:{truth:-2,plurality:-2}, g:["operational_coherence"]},
- {t:{ko:`탐구의 목표는 ‘탐구가 무한히 계속될 때 모든 탐구자가 동의하도록 운명지어진 의견’이며, 그 의견의 대상이 곧 실재다.`,en:`The aim of inquiry is "the opinion fated to be agreed upon by all who inquire" in the long run, and the object of that opinion is the real.`}, src:{ko:["퍼스","수렴적 실용주의"],en:["Peirce","Convergent Pragmatism"]}, eff:{truth:-1,progress:1}},
- {t:{ko:`이론의 가치는 세계를 거울처럼 비추는가가 아니라, 우리가 무엇을 할 수 있게 해주는가에 있다.`,en:`The value of a theory lies not in whether it mirrors the world but in what it lets us do.`}, src:{ko:["듀이","도구주의"],en:["Dewey","Instrumentalism"]}, eff:{truth:-1,practice:-1}},
- {t:{ko:`과학은 오류를 제거하며 진리에 가까워진다. 반증된 이론을 더 높은 진리유사도(verisimilitude)를 가진 이론이 대체하는 것이 진보다.`,en:`Science nears truth by eliminating error: progress is replacing a falsified theory with one of greater verisimilitude (truthlikeness).`}, src:{ko:["포퍼","진리유사도"],en:["Popper","Verisimilitude"]}, eff:{progress:2,method:1}, g:["verisimilitude"]},
- {t:{ko:`패러다임 전환 이후 과학자들은 사실상 ‘다른 세계’에서 연구하게 된다. 경쟁 패러다임은 공약 불가능하여 공통 척도로 우열을 가릴 수 없다.`,en:`After a paradigm shift scientists in effect work in "a different world." Rival paradigms are incommensurable—there is no common measure to rank them.`}, src:{ko:["쿤","공약불가능성"],en:["Kuhn","Incommensurability"]}, eff:{progress:-2,practice:-1}, g:["incommensurability"]},
- {t:{ko:`진보란 진리로의 접근이 아니라, 우리가 다룰 수 있는 현상과 실천 능력의 점진적 확장이다.`,en:`Progress is not approach toward truth but the gradual expansion of the phenomena we can handle and of our practical capabilities.`}, src:{ko:["장하석","실천적 진보관"],en:["Hasok Chang","Progress-as-Practice"]}, eff:{progress:-2,truth:-1}},
- {t:{ko:`과학혁명에서 버려지는 것은 틀린 부분뿐이고, 참인 핵심은 누적적으로 보존되어 후대로 전달된다.`,en:`In a scientific revolution only the false parts are discarded; the true core is cumulatively preserved and handed on.`}, src:{ko:["누적주의 전통","—"],en:["Cumulativist tradition","—"]}, eff:{progress:1}},
- {t:{ko:`연구 프로그램은 ‘전진적’이거나 ‘퇴행적’일 수 있고, 이 평가는 사후적·역사적 재구성을 통해서만 합리적으로 내려진다.`,en:`A research programme can be "progressive" or "degenerating," and this verdict can be reached rationally only through retrospective, historical reconstruction.`}, src:{ko:["라카토시","연구 프로그램 방법론"],en:["Lakatos","Methodology of Research Programmes"]}, eff:{progress:1,method:1}, g:["research_programme"]},
- {t:{ko:`이론 선택은 경험이 강제하는 것이 아니라 정확성·일관성·단순성·풍요성 같은 가치들의 비결정적 저울질이며, 합리적 개인들이 다르게 가중치를 줄 수 있다.`,en:`Theory choice is not forced by evidence; it is an indeterminate weighing of values—accuracy, consistency, simplicity, fruitfulness—and rational individuals may weight them differently.`}, src:{ko:["쿤","가치에 의한 이론선택"],en:["Kuhn","Values in Theory Choice"]}, eff:{progress:-1,method:-1,values:-1}},
- {t:{ko:`과학을 비과학과 구분하는 기준은 반증가능성이다. 어떤 관찰로도 반박될 수 없는 이론은 과학이 아니다.`,en:`The criterion separating science from non-science is falsifiability. A theory that no observation could refute is not science.`}, src:{ko:["포퍼","반증주의·구획"],en:["Popper","Falsificationism & Demarcation"]}, eff:{method:2,realism:1}},
- {t:{ko:`역사상 진보를 낳은 결정적 국면은 거의 모두 방법론적 규칙을 위반함으로써 일어났다. 합리성을 보장하는 고정된 방법은 없다 — 무엇이든 좋다.`,en:`The decisive moments of progress almost all came from breaking methodological rules. There is no fixed method that guarantees rationality—anything goes.`}, src:{ko:["파이어아벤트","인식적 무정부주의"],en:["Feyerabend","Epistemological Anarchism"]}, eff:{method:-2,plurality:-1}},
- {t:{ko:`과학의 핵심은 모든 분쟁을 오직 경험적 검증으로만 해결하기로 하는 단 하나의 ‘철의 규칙’에 대한, 비합리적이리만치 강고한 헌신이다.`,en:`The heart of science is an almost irrational, iron commitment to settling every dispute by empirical testing alone—the "iron rule of explanation."`}, src:{ko:["스트래븐스","The Knowledge Machine"],en:["Strevens","The Knowledge Machine"]}, eff:{method:2}},
- {t:{ko:`과학자 역량의 상당 부분은 명시적 규칙으로 환원되지 않는 ‘암묵지’이며, 실연과 도제식 전수로만 습득된다.`,en:`Much of a scientist's competence is "tacit knowledge" that can't be reduced to explicit rules; it is acquired only through demonstration and apprenticeship.`}, src:{ko:["폴라니","암묵지"],en:["Polanyi","Tacit Knowledge"]}, eff:{method:-1,practice:-1}, g:["tacit"]},
- {t:{ko:`어떤 단일 가설도 고립되어 검증되지 않는다. 예측이 틀렸을 때 어디를 수정할지는 논리가 강제하지 않으며 늘 여러 선택지가 열려 있다.`,en:`No single hypothesis is tested in isolation. When a prediction fails, logic doesn't dictate where to revise—there are always several options.`}, src:{ko:["뒤엠–콰인","검증의 전체론"],en:["Duhem–Quine","Confirmation Holism"]}, eff:{method:-1}, g:["holism"]},
- {t:{ko:`관찰은 언제나 이론에 물들어 있어, 이론과 무관한 중립적 관찰 언어는 존재하지 않는다.`,en:`Observation is always laden with theory; there is no neutral observation language independent of theory.`}, src:{ko:["핸슨·쿤","관찰의 이론적재성"],en:["Hanson & Kuhn","Theory-ladenness of Observation"]}, eff:{method:-1,realism:-1}, g:["theory_laden"]},
- {t:{ko:`모든 과학은 궁극적으로 물리학으로 환원되며, 세계에 대한 단 하나의 완결적·통일적 기술이 원리상 존재한다.`,en:`All sciences ultimately reduce to physics, and in principle there exists a single, complete, unified description of the world.`}, src:{ko:["통일과학·환원주의","—"],en:["Unity of Science","Reductionism"]}, eff:{plurality:2}, g:["reductionism"]},
- {t:{ko:`물리학의 근본 법칙들조차 엄밀히 말하면 거짓이다. 그것들은 통제된 모형 안에서만 성립하며, 세계는 국소적이고 누덕누덕한 법칙들의 모자이크다.`,en:`Even the fundamental laws of physics, strictly speaking, are false: they hold only inside controlled models, and the world is a patchwork (dappled) of local laws.`}, src:{ko:["카트라이트","The Dappled World"],en:["Cartwright","The Dappled World"]}, eff:{plurality:-2,practice:-1}, g:["dappled"]},
- {t:{ko:`생물학적 세계는 본질적으로 무질서하며 단일 분류·법칙 체계로 정돈되지 않는다. 다원주의는 임시방편이 아니라 형이상학적 사실이다.`,en:`The biological world is intrinsically disordered and resists ordering by any single system of classification or law. Pluralism is not a stopgap but a metaphysical fact.`}, src:{ko:["뒤프레","The Disorder of Things"],en:["Dupré","The Disorder of Things"]}, eff:{plurality:-2}},
- {t:{ko:`양립 불가능해 보이는 복수의 탐구 체계를 동시에 배양하는 것은 비효율이 아니라 과학의 건강에 본질적이다.`,en:`Cultivating several seemingly incompatible systems of inquiry at once is not inefficiency but essential to the health of science.`}, src:{ko:["장하석","능동적·규범적 다원주의"],en:["Hasok Chang","Active Normative Pluralism"]}, eff:{plurality:-2,method:-1}},
- {t:{ko:`서로 다른 분과의 법칙과 개념은 통일된 위계로 정렬되기보다 느슨하게만 연결되며, 각 층위는 고유한 자율성을 갖는다.`,en:`The laws and concepts of different disciplines are only loosely connected rather than ordered into one hierarchy; each level has its own autonomy.`}, src:{ko:["포더","특수과학론"],en:["Fodor","Special Sciences"]}, eff:{plurality:-1}},
- {t:{ko:`잘 확립된 과학은 자연을 그 ‘마디(joints)’에서 가른다. 올바른 분류는 발견되는 것이지 발명되는 것이 아니다.`,en:`Well-established science carves nature "at its joints." The correct classification is discovered, not invented.`}, src:{ko:["자연종 실재론","—"],en:["Natural-Kind Realism","—"]}, eff:{plurality:1,realism:1}, g:["natural_kinds"]},
- {t:{ko:`어떤 이론적 대상에 인과적으로 개입해 다른 현상을 일으킬 수 있다면 — 전자를 ‘뿌릴’ 수 있다면 — 그것은 실재한다. 실재성의 기준은 표상이 아니라 조작이다.`,en:`If you can causally intervene on a theoretical entity to produce other phenomena—if you can "spray" electrons—then it is real. The criterion of reality is manipulation, not representation.`}, src:{ko:["해킹","실험적 실재론"],en:["Hacking","Entity Realism"]}, eff:{practice:-2,realism:1}},
- {t:{ko:`실험은 이론을 검사하는 시녀가 아니라, ‘제 나름의 생명’을 가지고 이론과 독립적으로 진보하는 활동이다.`,en:`Experiment is not the handmaiden of theory; it has "a life of its own" and progresses independently of theory.`}, src:{ko:["해킹","Representing and Intervening"],en:["Hacking","Representing and Intervening"]}, eff:{practice:-2}},
- {t:{ko:`과학 지식의 기본 단위는 명제가 아니라 ‘실천 체계’이며, 인식적 활동은 정합적으로 수행 가능한 조작들의 묶음 안에서 의미를 얻는다.`,en:`The basic unit of scientific knowledge is not the proposition but the "system of practice"; epistemic activity gets its meaning within a bundle of coherently performable operations.`}, src:{ko:["장하석","실천 중심 인식론"],en:["Hasok Chang","Practice-based Epistemology"]}, eff:{practice:-2,truth:-1}, g:["system_of_practice"]},
- {t:{ko:`과학 이론은 일차적으로 언어적 진술의 집합이 아니라, 현상을 표상하는 추상적 ‘모형’들의 족(family)으로 이해해야 한다.`,en:`A scientific theory should be understood not primarily as a set of linguistic statements but as a family of abstract "models" that represent phenomena.`}, src:{ko:["의미론적(모형) 견해","수페스·반 프라센"],en:["Semantic (Model) View","Suppes & van Fraassen"]}, eff:{practice:2}, g:["semantic_view"]},
- {t:{ko:`데이터는 중립적으로 ‘주어진 것’이 아니라 유통·재사용을 위해 정제·이동되는 인공물이며, 그 가공 과정 자체가 과학적 추론의 일부다.`,en:`Data are not neutrally "given"; they are artifacts cleaned and moved for circulation and reuse, and that processing is itself part of scientific reasoning.`}, src:{ko:["레오넬리","데이터 중심 과학철학"],en:["Leonelli","Data-centric Philosophy of Science"]}, eff:{practice:-1,values:-1}},
- {t:{ko:`과학의 인식적 내용은 실험실의 물질적·사회적 배치 속에서 ‘구성’되며, 잘 정돈된 사실은 그 배치의 산물이다.`,en:`The epistemic content of science is "constructed" within the material and social arrangements of the laboratory; a well-ordered fact is a product of that arrangement.`}, src:{ko:["라투르–울가","실험실 연구"],en:["Latour–Woolgar","Laboratory Studies"]}, eff:{practice:-2,realism:-1}, g:["construction"]},
- {t:{ko:`과학의 내적 핵심(가설의 수용·기각)은 사회적·윤리적 가치로부터 자유로워야 하며, 가치는 문제 선택이나 응용 단계에만 개입한다.`,en:`The internal core of science (accepting or rejecting hypotheses) should be free of social and ethical values; values enter only in choosing problems or in applications.`}, src:{ko:["가치무관 이상","고전 실증주의"],en:["Value-free Ideal","Classical Positivism"]}, eff:{values:2}},
- {t:{ko:`오류의 결과가 중대할 때, 증거가 가설을 수용하기에 ‘충분한지’를 판단하는 일 자체에 비인식적 가치가 정당하게 개입한다.`,en:`When the consequences of error are grave, non-epistemic values legitimately enter the very judgment of whether the evidence is "sufficient" to accept a hypothesis.`}, src:{ko:["헤더 더글러스","귀납적 위험"],en:["Heather Douglas","Inductive Risk"]}, eff:{values:-2}, g:["non_epistemic","inductive_risk"]},
- {t:{ko:`객관성은 개별 과학자의 무가치성에서 오지 않는다. 다양한 관점이 비판적으로 상호작용하는 사회적 과정에서 확보된다 — 가치의 배제가 아니라 다원성이 객관성의 조건이다.`,en:`Objectivity does not come from individual scientists being value-free; it is secured through a social process in which diverse perspectives interact critically. Not the exclusion of values but their plurality is the condition of objectivity.`}, src:{ko:["롱기노","맥락적 경험론"],en:["Longino","Contextual Empiricism"]}, eff:{values:-2,plurality:-1}},
- {t:{ko:`과학의 의제는 ‘잘 정돈된 사회’라면 시민의 숙고된 선호를 반영해 민주적으로 정해져야 한다.`,en:`In a "well-ordered" society the agenda of science should be set democratically, reflecting the considered preferences of citizens.`}, src:{ko:["키처","민주사회의 과학"],en:["Kitcher","Science in a Democratic Society"]}, eff:{values:-1}},
- {t:{ko:`과학 지식의 가치는 그것을 누가, 어떤 권력 배치 속에서 생산했는가와 무관하게 평가될 수 있다.`,en:`The value of scientific knowledge can be assessed independently of who produced it and within what arrangement of power.`}, src:{ko:["내재주의·가치무관","—"],en:["Internalism","Value-free"]}, eff:{values:1}},
- {t:{ko:`지식은 항상 특정한 ‘관점’ 안에서 생산되며, 그 관점 의존성을 인정하는 것이 곧 반실재론은 아니다.`,en:`Knowledge is always produced within a particular "perspective," but acknowledging that perspective-dependence does not amount to anti-realism.`}, src:{ko:["마시미","관점적 실재론"],en:["Massimi","Perspectival Realism"]}, eff:{values:-1,realism:1,truth:1}},
+ {t:{ko:`전자나 유전자처럼 눈에 안 보이는 것도, 그걸 가정한 이론이 그렇게 잘 들어맞는 걸 보면 진짜로 존재한다고 보는 게 자연스럽다.`,en:`Unseen things like electrons or genes probably really exist — otherwise it'd be a strange fluke that theories assuming them work so well.`}, src:{ko:["퍼트넘·보이드","‘기적은 없다’ 논증"],en:["Putnam & Boyd","No-Miracles Argument"]}, eff:{realism:2}},
+ {t:{ko:`이론이 눈에 보이는 결과를 다 맞혀도, 그 뒤에 있다는 전자나 원자 같은 게 정말로 그렇게 존재하는지까지 ‘참’인 것은 아니다. 눈에 보이는 현상만 잘 설명하면 충분하고, 그 너머가 진짜인지까지 믿을 필요는 없다.`,en:`Even if a theory gets every observable result right, that doesn't make it "true" that the electrons or atoms it posits behind them really exist that way. Fitting what we can see is enough; we needn't believe the rest is real.`}, src:{ko:["반 프라센","구성적 경험론"],en:["van Fraassen","Constructive Empiricism"]}, eff:{realism:-2}},
+ {t:{ko:`예전엔 옳다고 믿었지만 지금은 틀린 걸로 밝혀진 이론이 많다. 그러니 지금 잘 맞는 이론도 언젠가 틀렸다고 밝혀질 수 있다.`,en:`Lots of theories people once trusted turned out wrong. So today's best theories could turn out wrong too.`}, src:{ko:["라우든","비관적 메타귀납"],en:["Laudan","Pessimistic Meta-Induction"]}, eff:{realism:-2,progress:-1}},
+ {t:{ko:`이론이 통째로 맞진 않더라도, 그 안의 수학적 뼈대(관계의 패턴)는 다음 이론에도 살아남는다. 그 부분만큼은 실제 세계를 반영한다.`,en:`Even if a theory isn't right as a whole, its mathematical skeleton — the pattern of relationships — survives into the next theory. At least that part reflects the real world.`}, src:{ko:["워럴","구조적 실재론"],en:["Worrall","Structural Realism"]}, eff:{realism:1,truth:1}},
+ {t:{ko:`'눈에 보이느냐'는 그냥 우리 눈의 한계일 뿐이다. 전자는 탁자만큼이나 실제로 있는 것이다.`,en:`"Can we see it?" is just a limit of our eyes. An electron is every bit as real as a table.`}, src:{ko:["그로버 맥스웰","관측불가능성 비판"],en:["Grover Maxwell","Critique of (Un)observability"]}, eff:{realism:2}},
+ {t:{ko:`우리 설명이 늘 조금씩 고쳐지더라도, 잘 나가는 과학은 세상이 실제로 어떻게 굴러가는지를 점점 더 정확히 보여준다.`,en:`Our descriptions keep getting tweaked, but good science shows ever more accurately how the world actually works.`}, src:{ko:["실로스","과학적 실재론"],en:["Psillos","Scientific Realism"]}, eff:{realism:1,progress:1}},
+ {t:{ko:`'참'이란 실제 세상과 들어맞는다는 뜻이다. 그게 우리한테 쓸모 있든 없든, 사실이면 참이다.`,en:`"True" means matching the way the world actually is — whether or not it happens to be useful to us.`}, src:{ko:["대응설 전통","러셀 등"],en:["Correspondence tradition","Russell et al."]}, eff:{truth:2}},
+ {t:{ko:`어떤 생각이 '맞다'는 건, 실제로 써먹어 보니 잘 통하더라는 뜻이다. 진리는 쓸모 속에서 만들어진다.`,en:`An idea being "true" just means it works well when you actually use it. Truth is made in usefulness.`}, src:{ko:["윌리엄 제임스","실용주의 진리관"],en:["William James","Pragmatist Theory of Truth"]}, eff:{truth:-2}},
+ {t:{ko:`어떤 규칙은 맞다/틀리다의 문제가 아니라, 우리가 편해서 그렇게 쓰기로 정한 약속일 뿐이다(예: 측정 기준, 도형의 기본 규칙).`,en:`Some rules aren't true or false — we just agreed to use them because they're convenient (think measurement standards, or the ground rules of geometry).`}, src:{ko:["푸앵카레","규약주의"],en:["Poincaré","Conventionalism"]}, eff:{truth:-2,realism:-1}},
+ {t:{ko:`'물은 H₂O다' 같은 것조차 정답이 딱 하나만 있는 게 아니다. 보는 방식·다루는 방식이 다르면 저마다 말이 되는 답이 여럿일 수 있다.`,en:`Even "water is H₂O" doesn't have just one right answer. Depending on how you approach and use it, several answers can each make sense.`}, src:{ko:["장하석","Is Water H2O?"],en:["Hasok Chang","Is Water H2O?"]}, eff:{truth:-2,plurality:-2}},
+ {t:{ko:`충분히 오래 끝까지 탐구하면 결국 모두가 같은 결론에 이르게 되어 있고, 바로 그 결론이 '진짜'다.`,en:`If inquiry goes on long enough, everyone is bound to reach the same conclusion in the end — and that conclusion is what's real.`}, src:{ko:["퍼스","수렴적 실용주의"],en:["Peirce","Convergent Pragmatism"]}, eff:{truth:-1,progress:1}},
+ {t:{ko:`이론이 좋은지는 세상을 거울처럼 똑같이 비추는지가 아니라, 우리가 뭔가를 해낼 수 있게 해주는지로 따져야 한다.`,en:`What makes a theory good isn't whether it mirrors the world, but whether it lets us get things done.`}, src:{ko:["듀이","도구주의"],en:["Dewey","Instrumentalism"]}, eff:{truth:-1,practice:-1}},
+ {t:{ko:`과학은 틀린 걸 걸러내면서 진리에 점점 다가간다. 틀린 이론이 더 나은 이론으로 교체되는 게 곧 발전이다.`,en:`Science gets closer to the truth by weeding out errors. Progress is replacing a wrong theory with a better one.`}, src:{ko:["포퍼","진리유사도"],en:["Popper","Verisimilitude"]}, eff:{progress:2,method:1}},
+ {t:{ko:`과학에 큰 전환이 일어나면 그 전후의 과학자들은 사실상 다른 세계를 보는 셈이라, 어느 쪽이 더 낫다고 딱 잘라 비교하기 어렵다.`,en:`After a big shift in science, the scientists before and after are practically seeing different worlds, so you can't cleanly say which side is better.`}, src:{ko:["쿤","공약불가능성"],en:["Kuhn","Incommensurability"]}, eff:{progress:-2,practice:-1}},
+ {t:{ko:`발전이란 진리에 가까워지는 게 아니라, 우리가 다룰 수 있는 일과 할 수 있는 것이 점점 많아지는 것이다.`,en:`Progress isn't getting closer to truth — it's being able to handle and do more and more.`}, src:{ko:["장하석","실천적 진보관"],en:["Hasok Chang","Progress-as-Practice"]}, eff:{progress:-2,truth:-1}},
+ {t:{ko:`과학이 뒤집힐 때도 틀린 부분만 버려지고, 맞는 핵심은 차곡차곡 쌓여 다음 세대로 이어진다.`,en:`When science is overturned, only the wrong parts are dropped; the correct core piles up and carries on to the next generation.`}, src:{ko:["누적주의 전통","—"],en:["Cumulativist tradition","—"]}, eff:{progress:1}},
+ {t:{ko:`어떤 연구 흐름이 '잘 나가는 중'인지 '한물간' 건지는, 새로운 걸 예측해내는지 아니면 자꾸 변명만 붙이는지를 나중에 돌아봐야 알 수 있다.`,en:`Whether a line of research is "on a roll" or "running out of steam" can only be judged in hindsight — does it predict new things, or just keep making excuses?`}, src:{ko:["라카토시","연구 프로그램 방법론"],en:["Lakatos","Methodology of Research Programmes"]}, eff:{progress:1,method:1}},
+ {t:{ko:`어떤 이론을 고를지는 데이터가 자동으로 정해주지 않는다. 정확성·단순성 같은 여러 기준을 저울질하는 거라, 똑똑한 사람들끼리도 선택이 갈릴 수 있다.`,en:`The data don't automatically pick which theory to choose. You weigh things like accuracy and simplicity, so even smart people can land on different choices.`}, src:{ko:["쿤","가치에 의한 이론선택"],en:["Kuhn","Values in Theory Choice"]}, eff:{progress:-1,method:-1,values:-1}},
+ {t:{ko:`과학과 비과학을 가르는 기준은 ‘이런 결과가 나오면 내가 틀린 것’이라고 말할 수 있는지이다.`,en:`What separates science from non-science is whether you can say, "if this result comes up, I was wrong."`}, src:{ko:["포퍼","반증주의·구획"],en:["Popper","Falsificationism & Demarcation"]}, eff:{method:2,realism:1}},
+ {t:{ko:`역사를 보면 큰 도약은 대부분 '정해진 방법'을 어겼을 때 나왔다. 모든 경우에 통하는 단 하나의 과학 방법 같은 건 없다.`,en:`Historically, the big leaps usually came from breaking "the proper method." There's no single scientific method that works in every case.`}, src:{ko:["파이어아벤트","인식적 무정부주의"],en:["Feyerabend","Epistemological Anarchism"]}, eff:{method:-2,plurality:-1}},
+ {t:{ko:`과학이 강한 이유는, 무슨 논쟁이든 결국 '실험으로 확인하자'는 한 가지 원칙을 거의 고집스러울 만큼 지키기 때문이다.`,en:`Science is powerful because, whatever the dispute, it sticks almost stubbornly to one rule: settle it by experiment.`}, src:{ko:["스트래븐스","The Knowledge Machine"],en:["Strevens","The Knowledge Machine"]}, eff:{method:2}},
+ {t:{ko:`과학 실력의 상당 부분은 말로 다 옮길 수 없는, 직접 해보며 몸으로 익히는 감각이다.`,en:`A lot of scientific skill is a feel you pick up by doing, not something you can fully write down as rules.`}, src:{ko:["폴라니","암묵지"],en:["Polanyi","Tacit Knowledge"]}, eff:{method:-1,practice:-1}},
+ {t:{ko:`실험 결과가 예상과 다를 때, 정확히 어디가 틀렸는지는 논리만으로 정해지지 않는다. 고칠 수 있는 곳은 늘 여러 군데다.`,en:`When an experiment doesn't match expectations, logic alone can't pin down exactly what went wrong — there are always several things you could fix.`}, src:{ko:["뒤엠–콰인","검증의 전체론"],en:["Duhem–Quine","Confirmation Holism"]}, eff:{method:-1}},
+ {t:{ko:`우리는 무엇을 보든 이미 가진 생각에 영향을 받는다. 아무 입장 없이 순수하게 '있는 그대로' 관찰하는 건 불가능하다.`,en:`Whatever we look at, our existing ideas color it. There's no way to observe things "purely," with no point of view.`}, src:{ko:["핸슨·쿤","관찰의 이론적재성"],en:["Hanson & Kuhn","Theory-ladenness of Observation"]}, eff:{method:-1,realism:-1}},
+ {t:{ko:`결국 모든 과학은 물리학으로 환원되고, 세상에 대한 완벽하고 통일된 단 하나의 설명이 원리상 가능하다.`,en:`In the end all sciences boil down to physics, and in principle there's one complete, unified description of everything.`}, src:{ko:["통일과학·환원주의","—"],en:["Unity of Science","Reductionism"]}, eff:{plurality:2}},
+ {t:{ko:`물리학의 '근본 법칙'조차 딱 들어맞는 건 잘 통제된 실험 안에서뿐이다. 실제 세상은 여기저기 다른 규칙이 적용되는 조각보에 가깝다.`,en:`Even physics' "fundamental laws" only hold exactly inside tidy lab setups. The real world is more like a patchwork where different rules apply in different places.`}, src:{ko:["카트라이트","The Dappled World"],en:["Cartwright","The Dappled World"]}, eff:{plurality:-2,practice:-1}},
+ {t:{ko:`생물의 세계는 원래 들쭉날쭉해서 하나의 깔끔한 분류나 법칙으로 정리되지 않는다. 여러 갈래로 보는 게 임시방편이 아니라 사실 그 자체다.`,en:`The living world is inherently messy and won't fit one neat classification or law. Seeing it in many ways isn't a stopgap — it's just how things are.`}, src:{ko:["뒤프레","The Disorder of Things"],en:["Dupré","The Disorder of Things"]}, eff:{plurality:-2}},
+ {t:{ko:`서로 안 맞아 보이는 여러 접근을 동시에 키워두는 건 낭비가 아니라, 오히려 과학을 건강하게 만든다.`,en:`Keeping several seemingly clashing approaches alive at once isn't waste — it actually keeps science healthy.`}, src:{ko:["장하석","능동적·규범적 다원주의"],en:["Hasok Chang","Active Normative Pluralism"]}, eff:{plurality:-2,method:-1}},
+ {t:{ko:`분야마다 쓰는 법칙과 개념은 하나의 위계로 깔끔히 줄 세워지지 않고 느슨하게만 연결된다. 각 분야는 나름의 독립성을 갖는다.`,en:`Each field's laws and concepts aren't neatly stacked into one hierarchy; they're only loosely linked, and each field keeps its own independence.`}, src:{ko:["포더","특수과학론"],en:["Fodor","Special Sciences"]}, eff:{plurality:-1}},
+ {t:{ko:`잘 자리잡은 과학은 자연을 '원래 나뉘는 결'대로 가른다. 올바른 분류는 우리가 지어내는 게 아니라 발견하는 것이다.`,en:`Well-established science cuts nature along its natural seams. The right classification is discovered, not invented.`}, src:{ko:["자연종 실재론","—"],en:["Natural-Kind Realism","—"]}, eff:{plurality:1,realism:1}},
+ {t:{ko:`어떤 대상을 직접 다뤄서 다른 일을 일으킬 수 있다면 — 전자를 '쏘아' 다른 걸 바꿀 수 있다면 — 그건 실제로 있는 것이다. 실재의 기준은 '써먹을 수 있느냐'다.`,en:`If you can handle something to make other things happen — if you can "fire" electrons to change something — then it's real. The test of reality is whether you can put it to work.`}, src:{ko:["해킹","실험적 실재론"],en:["Hacking","Entity Realism"]}, eff:{practice:-2,realism:1}},
+ {t:{ko:`실험은 이론을 검사하는 보조 역할인 것만은 아니다. 실험은 그 자체로 독립적인 활동이고 이론과 따로 발전한다.`,en:`Experiment isn't just a helper for testing theory. It's its own activity and moves forward on its own.`}, src:{ko:["해킹","Representing and Intervening"],en:["Hacking","Representing and Intervening"]}, eff:{practice:-2}},
+ {t:{ko:`과학 지식의 기본 단위는 '문장'이 아니라 '실제로 해내는 활동의 묶음'이다. 앎은 그 활동 안에서 비로소 뜻을 갖는다.`,en:`The basic unit of scientific knowledge isn't a sentence but a bundle of things you can actually do. Knowing gets its meaning inside that doing.`}, src:{ko:["장하석","실천 중심 인식론"],en:["Hasok Chang","Practice-based Epistemology"]}, eff:{practice:-2,truth:-1}},
+ {t:{ko:`과학 이론은 문장들의 모음이라기보다, 현상을 본떠 만든 '모형'들의 모음으로 보는 게 낫다.`,en:`A scientific theory is better seen as a set of "models" built to mimic phenomena than as a set of sentences.`}, src:{ko:["의미론적(모형) 견해","수페스·반 프라센"],en:["Semantic (Model) View","Suppes & van Fraassen"]}, eff:{practice:2}},
+ {t:{ko:`데이터는 그냥 '주어지는' 게 아니다. 모으고 다듬고 옮기는 손질 과정을 거치며, 그 과정 자체가 이미 과학적 판단의 일부다.`,en:`Data aren't simply "given." They're collected, cleaned, and moved, and that handling is already part of the scientific reasoning.`}, src:{ko:["레오넬리","데이터 중심 과학철학"],en:["Leonelli","Data-centric Philosophy of Science"]}, eff:{practice:-1,values:-1}},
+ {t:{ko:`과학적 사실은 실험실의 장비·사람·관계 속에서 '만들어진다'. 잘 정리된 사실은 그 환경의 산물이다.`,en:`Scientific facts are "built" within the lab's equipment, people, and relationships. A tidy fact is a product of that setting.`}, src:{ko:["라투르–울가","실험실 연구"],en:["Latour–Woolgar","Laboratory Studies"]}, eff:{practice:-2,realism:-1}},
+ {t:{ko:`과학의 핵심(가설을 받아들일지 말지)은 사회적·윤리적 가치에서 자유로워야 한다. 가치는 주제를 고르거나 응용할 때만 끼어들어야 한다.`,en:`Science's core — accepting or rejecting a hypothesis — should be free of social and ethical values. Values belong only in choosing topics or applying results.`}, src:{ko:["가치무관 이상","고전 실증주의"],en:["Value-free Ideal","Classical Positivism"]}, eff:{values:2}},
+ {t:{ko:`어떤 주장을 ‘받아들일 만큼 증거가 충분한가’를 정하는 일에는 정답이 되는 기준이 없다. 기준을 낮추면 틀린 걸 맞다고 할 위험(거짓 양성), 높이면 맞는 걸 놓칠 위험(거짓 음성)이 커진다. 둘 중 어느 쪽이 큰지는 가치의 문제이기 때문에 ‘얼마나 확실해야 확실한 것이냐’는 윤리·사회적 판단이다.`,en:`There's no objectively right cutoff for "how much evidence is enough" to accept a claim. Set the bar low and you risk calling a false thing true (a false positive); set it high and you risk missing a true thing (a false negative). Which error is worse is a question of values — so "how sure counts as sure enough" is itself an ethical and social judgment.`}, src:{ko:["헤더 더글러스","귀납적 위험"],en:["Heather Douglas","Inductive Risk"]}, eff:{values:-2}},
+ {t:{ko:`객관성은 과학자 개인이 가치 중립을 추구한다고 생기는 게 아니다. 서로 다른 입장들이 비판적으로 부딪히는 과정에서 생긴다 — 가치를 없애는 게 아니라 다양하게 만드는 게 객관성의 조건이다.`,en:`Objectivity doesn't come from individual scientists striving to be value-neutral. It comes from different viewpoints clashing critically — not removing values, but having many of them, is what makes science objective.`}, src:{ko:["롱기노","맥락적 경험론"],en:["Longino","Contextual Empiricism"]}, eff:{values:-2,plurality:-1}},
+ {t:{ko:`과학이 무엇을 연구할지는, 좋은 사회라면 시민들이 충분히 숙고한 바람을 반영해 민주적으로 정해야 한다.`,en:`What science chooses to study should, in a good society, be decided democratically, reflecting citizens' considered wishes.`}, src:{ko:["키처","민주사회의 과학"],en:["Kitcher","Science in a Democratic Society"]}, eff:{values:-1}},
+ {t:{ko:`과학 지식의 가치는 그걸 누가 어떤 상황에서 만들었는지와 상관없이 따로 평가할 수 있다.`,en:`The worth of scientific knowledge can be judged on its own, regardless of who produced it or under what circumstances.`}, src:{ko:["내재주의·가치무관","—"],en:["Internalism","Value-free"]}, eff:{values:1}},
+ {t:{ko:`모든 지식은 특정한 '관점' 안에서 만들어진다. 하지만 그 점을 인정한다고 해서 '진리는 없다'는 말이 되는 건 아니다.`,en:`All knowledge is made from a particular "point of view." But admitting that doesn't mean there's no truth.`}, src:{ko:["마시미","관점적 실재론"],en:["Massimi","Perspectival Realism"]}, eff:{values:-1,realism:1,truth:1}},
 ];
 
 /* ===================== PHILOSOPHERS ===================== */
 const PHIL=[
- {n:{ko:"칼 포퍼",en:"Karl Popper"}, v:[70,60,85,90,30,40,70], b:{ko:"반증가능성으로 과학을 구획하고, 진리유사도를 향한 누적적 진보를 믿은 비판적 합리주의의 표상.",en:"Demarcated science by falsifiability and believed in cumulative progress toward verisimilitude—the emblem of critical rationalism."}},
- {n:{ko:"토머스 쿤",en:"Thomas Kuhn"}, v:[-10,-30,-70,-50,-20,-40,-50], b:{ko:"정상과학과 혁명, 공약불가능성. 진보를 진리 수렴이 아닌 패러다임 교체로 다시 그렸다.",en:"Normal science, revolutions, incommensurability. Redrew progress as paradigm replacement rather than convergence on truth."}},
- {n:{ko:"임레 라카토시",en:"Imre Lakatos"}, v:[50,40,40,60,10,20,30], b:{ko:"포퍼와 쿤 사이. 전진적/퇴행적 연구 프로그램으로 합리성을 사후 재구성한다.",en:"Between Popper and Kuhn: rationally reconstructs science as progressive vs. degenerating research programmes."}},
- {n:{ko:"파울 파이어아벤트",en:"Paul Feyerabend"}, v:[-20,-55,-65,-95,-85,-45,-60], b:{ko:"‘무엇이든 좋다.’ 고정된 방법을 거부하고 이론적 다원주의를 옹호한 인식적 무정부주의자.",en:`"Anything goes." Rejected any fixed method and championed theoretical pluralism—the epistemological anarchist.`}},
- {n:{ko:"루돌프 카르납",en:"Rudolf Carnap"}, v:[-30,-10,50,75,85,50,85], b:{ko:"논리경험주의. 형이상학을 배격하고 통일과학과 가치중립적 검증을 추구했다.",en:"Logical empiricism. Dismissed metaphysics and pursued unified science and value-neutral verification."}},
- {n:{ko:"앙리 푸앵카레",en:"Henri Poincaré"}, v:[20,-70,30,40,20,30,50], b:{ko:"규약주의. 기하 공리를 경험의 문제가 아닌 편의의 규약으로 보았다 — 구조적 실재론의 선구.",en:"Conventionalism. Treated geometric axioms as conventions of convenience, not matters of fact—a forerunner of structural realism."}},
- {n:{ko:"피에르 뒤엠",en:"Pierre Duhem"}, v:[-30,-20,20,-30,10,30,40], b:{ko:"검증의 전체론과 결정적 실험 비판. 도구주의로 기운 물리학의 목표론.",en:"Confirmation holism and a critique of the crucial experiment; an instrumentalist-leaning account of physics' aims."}},
- {n:{ko:"W.V.O. 콰인",en:"W.V.O. Quine"}, v:[20,10,10,-40,40,30,30], b:{ko:"믿음의 그물망, 미결정성, 자연화된 인식론. 분석/종합 구분을 허문 전체론자.",en:"Web of belief, underdetermination, naturalized epistemology. The holist who dissolved the analytic/synthetic divide."}},
- {n:{ko:"바스 반 프라센",en:"Bas van Fraassen"}, v:[-85,-20,-20,30,20,60,40], b:{ko:"구성적 경험론. 과학의 목표는 진리가 아니라 경험적 적합성이라 본 합리적 반실재론자.",en:"Constructive empiricism. A rational anti-realist who held science aims at empirical adequacy, not truth."}},
- {n:{ko:"이언 해킹",en:"Ian Hacking"}, v:[50,-10,-30,-30,-30,-90,-10], b:{ko:"‘뿌릴 수 있으면 실재한다.’ 표상이 아닌 개입을 실재성의 기준으로 삼은 실험적 실재론.",en:`"If you can spray them, they're real." Made intervention, not representation, the criterion of reality—experimental realism.`}},
- {n:{ko:"낸시 카트라이트",en:"Nancy Cartwright"}, v:[20,-10,-20,-20,-90,-60,-20], b:{ko:"근본법칙은 ‘거짓말’을 한다. 누더기 세계와 국소적 인과를 옹호한 반근본주의 다원론자.",en:`The fundamental laws "lie." An anti-fundamentalist pluralist defending a dappled world and local causation.`}},
- {n:{ko:"필립 키처",en:"Philip Kitcher"}, v:[60,40,50,30,30,20,-70], b:{ko:"갈릴레오적 실재론과 자연주의를 견지하되, ‘잘 정돈된 과학’에서 가치와 민주주의를 끌어들였다.",en:`Holds a Galilean realism and naturalism, yet brings values and democracy into a "well-ordered" science.`}},
- {n:{ko:"마이클 스트래븐스",en:"Michael Strevens"}, v:[60,50,60,85,40,30,50], b:{ko:"‘철의 규칙’ — 오직 경험적 검증으로만 분쟁을 해결한다는 비합리적 헌신이 과학을 만든다.",en:`The "iron rule"—an irrational commitment to resolving disputes by empirical test alone is what makes science work.`}},
- {n:{ko:"장하석",en:"Hasok Chang"}, v:[30,-85,-80,-40,-90,-80,-40], b:{ko:"능동적 실재론·실천 중심 다원주의. 진리 대응을 넘어 조작적 정합성과 실천의 확장으로 진보를 재정의한다.",en:"Active realism and practice-based pluralism. Redefines progress beyond truth-correspondence as operational coherence and the expansion of practice."}},
- {n:{ko:"미켈라 마시미",en:"Michela Massimi"}, v:[50,30,30,30,-10,10,-40], b:{ko:"관점적 실재론. 모든 지식은 관점 의존적이지만 그것이 반실재론을 함의하지는 않는다.",en:"Perspectival realism. All knowledge is perspective-dependent, yet that does not entail anti-realism."}},
- {n:{ko:"헤더 더글러스",en:"Heather Douglas"}, v:[40,30,30,20,10,10,-90], b:{ko:"귀납적 위험. 가설 수용의 문턱 판단 자체에 윤리·사회적 가치가 정당하게 개입한다.",en:"Inductive risk. Ethical and social values legitimately enter the very judgment of when to accept a hypothesis."}},
- {n:{ko:"헬렌 롱기노",en:"Helen Longino"}, v:[10,10,10,-20,-40,-20,-85], b:{ko:"맥락적 경험론. 객관성을 개인의 무가치성이 아닌 비판적 다원성의 사회적 과정으로 본다.",en:"Contextual empiricism. Objectivity comes not from individual value-freedom but from a social process of critical plurality."}},
+ {n:{ko:"칼 포퍼",en:"Karl Popper"}, v:[70,60,85,90,30,40,70], b:{ko:"'틀릴 수 있어야 과학이다'(반증). 틀린 걸 걸러내며 진리에 다가간다고 본 비판적 합리주의의 상징.",en:"'It's science only if it can be proven wrong.' Believed we near truth by weeding out error—the emblem of critical rationalism."}},
+ {n:{ko:"토머스 쿤",en:"Thomas Kuhn"}, v:[-10,-30,-70,-50,-20,-40,-50], b:{ko:"패러다임과 혁명. 발전을 '진리로의 수렴'이 아니라 세계관의 교체로 다시 그렸다.",en:"Paradigms and revolutions. Recast progress as a change of worldview rather than convergence on truth."}},
+ {n:{ko:"임레 라카토시",en:"Imre Lakatos"}, v:[50,40,40,60,10,20,30], b:{ko:"포퍼와 쿤 사이. 연구 흐름이 '잘 나가는지/한물갔는지'로 합리성을 사후 평가한다.",en:"Between Popper and Kuhn: judges rationality by whether a research line is progressing or degenerating."}},
+ {n:{ko:"파울 파이어아벤트",en:"Paul Feyerabend"}, v:[-20,-55,-65,-95,-85,-45,-60], b:{ko:"'무엇이든 좋다.' 정해진 방법을 거부하고 다양한 접근을 옹호한 인식적 무정부주의자.",en:`"Anything goes." Rejected any fixed method and championed many approaches—the epistemological anarchist.`}},
+ {n:{ko:"루돌프 카르납",en:"Rudolf Carnap"}, v:[-30,-10,50,75,85,50,85], b:{ko:"논리경험주의. 형이상학을 경계하고 통일과학과 가치중립적 검증을 추구했다.",en:"Logical empiricism. Wary of metaphysics; pursued unified science and value-neutral verification."}},
+ {n:{ko:"앙리 푸앵카레",en:"Henri Poincaré"}, v:[20,-70,30,40,20,30,50], b:{ko:"규약주의. 어떤 기본 규칙은 참/거짓이 아니라 우리가 편해서 정한 약속이라 보았다.",en:"Conventionalism. Saw certain ground rules as conventions of convenience, not truths."}},
+ {n:{ko:"피에르 뒤엠",en:"Pierre Duhem"}, v:[-30,-20,20,-30,10,30,40], b:{ko:"가설은 홀로 검증되지 않는다(전체론). 물리학을 진리보다 현상의 정리로 본 도구주의 성향.",en:"Hypotheses aren't tested alone (holism). Leaned instrumentalist, seeing physics as organizing phenomena rather than finding truth."}},
+ {n:{ko:"W.V.O. 콰인",en:"W.V.O. Quine"}, v:[20,10,10,-40,40,30,30], b:{ko:"믿음의 그물망과 자연주의. 증거가 이론을 완전히 결정하지 못한다고 본 전체론자.",en:"Web of belief and naturalism. A holist who held that evidence never fully fixes theory."}},
+ {n:{ko:"바스 반 프라센",en:"Bas van Fraassen"}, v:[-85,-20,-20,30,20,60,40], b:{ko:"구성적 경험론. 과학의 목표는 진리가 아니라 '눈에 보이는 것에 잘 맞음'이라 본 합리적 반실재론자.",en:"Constructive empiricism. A rational anti-realist: science aims at fitting the observable, not at truth."}},
+ {n:{ko:"이언 해킹",en:"Ian Hacking"}, v:[50,-10,-30,-30,-30,-90,-10], b:{ko:"'써먹을 수 있으면 실재한다.' 표현이 아니라 직접 다루는 실험을 실재의 기준으로 삼았다.",en:`"If you can use it, it's real." Made hands-on experiment, not representation, the test of reality.`}},
+ {n:{ko:"낸시 카트라이트",en:"Nancy Cartwright"}, v:[20,-10,-20,-20,-90,-60,-20], b:{ko:"근본법칙도 통제된 상황에서만 맞는다. 세계를 조각보로 본 반근본주의 다원론자.",en:"Even fundamental laws hold only in controlled setups. A pluralist who sees the world as a patchwork."}},
+ {n:{ko:"필립 키처",en:"Philip Kitcher"}, v:[60,40,50,30,30,20,-70], b:{ko:"실재론과 자연주의를 지키되, '잘 정돈된 과학'에서 가치와 민주주의를 끌어들였다.",en:"Keeps realism and naturalism, yet brings values and democracy into a 'well-ordered' science."}},
+ {n:{ko:"마이클 스트래븐스",en:"Michael Strevens"}, v:[60,50,60,85,40,30,50], b:{ko:"'철의 규칙' — 무슨 논쟁이든 실험으로만 푼다는 고집이 과학을 작동하게 만든다.",en:"The 'iron rule'—a stubborn insistence on settling disputes by experiment alone is what makes science work."}},
+ {n:{ko:"장하석",en:"Hasok Chang"}, v:[30,-85,-80,-40,-90,-80,-40], b:{ko:"능동적 실재론·실천 중심 다원주의. 진리 '대응'을 넘어, 진보를 '할 수 있는 일의 확장'으로 다시 정의한다.",en:"Active realism and practice-based pluralism. Beyond truth-as-correspondence, redefines progress as expanding what we can do."}},
+ {n:{ko:"미켈라 마시미",en:"Michela Massimi"}, v:[50,30,30,30,-10,10,-40], b:{ko:"관점적 실재론. 모든 지식은 관점에 기대지만, 그렇다고 진리가 없는 건 아니다.",en:"Perspectival realism. All knowledge rests on a viewpoint, yet that doesn't mean there's no truth."}},
+ {n:{ko:"헤더 더글러스",en:"Heather Douglas"}, v:[40,30,30,20,10,10,-90], b:{ko:"틀렸을 때 피해가 크면, 증거가 충분한지 판단하는 데에 윤리·사회적 고려가 정당하게 들어온다.",en:"When error is costly, ethical and social concerns legitimately enter the judgment of whether evidence is enough."}},
+ {n:{ko:"헬렌 롱기노",en:"Helen Longino"}, v:[10,10,10,-20,-40,-20,-85], b:{ko:"객관성은 개인이 가치를 비워서가 아니라, 다양한 입장이 비판적으로 부딪혀서 생긴다.",en:"Objectivity comes not from individuals being value-free, but from diverse viewpoints clashing critically."}},
 ];
 
 /* ===================== SCHOOLS ===================== */
 const SCHOOLS=[
- {name:{ko:"비판적 합리주의자",en:"Critical Rationalist"}, fig:{ko:"포퍼형",en:"Popper-type"}, v:[70,60,85,90,30,40,70], d:{ko:"반증과 진리유사도를 신뢰합니다. 과학은 대담한 추측과 가차없는 시험을 통해 진리에 다가간다고 봅니다.",en:"You trust falsification and verisimilitude. Science nears truth through bold conjecture and ruthless testing."}},
- {name:{ko:"논리경험주의자",en:"Logical Empiricist"}, fig:{ko:"카르납형",en:"Carnap-type"}, v:[-30,-10,50,75,85,50,85], d:{ko:"형이상학을 경계하고, 통일과학·명료한 방법·가치중립적 검증을 신뢰하는 경험주의 전통에 서 있습니다.",en:"Wary of metaphysics, you trust unified science, clear method, and value-neutral verification in the empiricist tradition."}},
- {name:{ko:"구성적 경험론자",en:"Constructive Empiricist"}, fig:{ko:"반 프라센형",en:"van Fraassen-type"}, v:[-85,-20,-20,40,20,55,40], d:{ko:"이론을 ‘참’이 아니라 ‘경험적으로 적합한 것’으로 받아들이며, 관측 너머의 존재론적 단언은 보류합니다.",en:`You accept theories as "empirically adequate" rather than "true," suspending ontological claims beyond the observable.`}},
- {name:{ko:"역사주의·패러다임론자",en:"Historicist · Paradigm-theorist"}, fig:{ko:"쿤형",en:"Kuhn-type"}, v:[-10,-30,-75,-55,-20,-45,-50], d:{ko:"과학을 논리가 아닌 역사·공동체·패러다임의 동학으로 읽으며, 진보를 진리 수렴과 분리합니다.",en:"You read science through history, community, and paradigm dynamics, decoupling progress from convergence on truth."}},
- {name:{ko:"인식적 무정부주의자",en:"Epistemic Anarchist"}, fig:{ko:"파이어아벤트형",en:"Feyerabend-type"}, v:[-20,-55,-65,-95,-85,-45,-60], d:{ko:"단일한 과학적 방법도, 단일한 세계상도 거부합니다. 다원성과 방법론적 자유를 진보의 동력으로 봅니다.",en:"You reject any single scientific method or single world-picture, seeing plurality and methodological freedom as the engine of progress."}},
- {name:{ko:"능동적 실재론·다원주의자",en:"Active Realist & Pluralist"}, fig:{ko:"장하석형",en:"Chang-type"}, v:[30,-85,-80,-40,-90,-80,-40], d:{ko:"실재에 헌신하되 진리 대응 도식을 넘어섭니다. 진보를 실천 능력의 확장으로, 과학을 복수 체계의 능동적 배양으로 이해합니다.",en:"Committed to reality yet beyond truth-correspondence: you read progress as expanding practical capability and science as the active cultivation of plural systems."}},
- {name:{ko:"실험적 실재론자",en:"Experimental Realist"}, fig:{ko:"해킹·카트라이트형",en:"Hacking–Cartwright-type"}, v:[40,-10,-25,-25,-60,-80,-15], d:{ko:"표상보다 개입을, 근본법칙보다 국소적 인과를 신뢰합니다. 실재성은 실험실에서 만질 수 있는 것에서 옵니다.",en:"You trust intervention over representation and local causation over fundamental laws. Reality is what you can handle in the lab."}},
- {name:{ko:"가치적재 사회인식론자",en:"Value-laden Social Epistemologist"}, fig:{ko:"더글러스·롱기노형",en:"Douglas–Longino-type"}, v:[25,15,20,0,-30,-10,-88], d:{ko:"가치는 과학에서 제거할 수 없으며, 객관성은 그 가치들의 다원적·비판적 관리에서 나온다고 봅니다.",en:"Values can't be removed from science; objectivity comes from managing them plurally and critically."}},
- {name:{ko:"표준 과학적 실재론자",en:"Standard Scientific Realist"}, fig:{ko:"실로스·키처형",en:"Psillos–Kitcher-type"}, v:[70,55,65,70,40,30,50], d:{ko:"성공한 과학은 세계의 인과 구조를 근사적으로 참되게 드러낸다고 봅니다. 학계 주류에 가장 가까운 입장입니다.",en:"You hold that successful science approximately truly reveals the world's causal structure—closest to the academic mainstream."}},
+ {name:{ko:"비판적 합리주의자",en:"Critical Rationalist"}, fig:{ko:"포퍼형",en:"Popper-type"}, v:[70,60,85,90,30,40,70], d:{ko:"'틀릴 수 있어야 과학'이라 믿습니다. 대담하게 추측하고 가차없이 시험하며 진리에 다가간다고 봅니다.",en:"You believe science must be falsifiable. It nears truth through bold conjecture and ruthless testing."}},
+ {name:{ko:"논리경험주의자",en:"Logical Empiricist"}, fig:{ko:"카르납형",en:"Carnap-type"}, v:[-30,-10,50,75,85,50,85], d:{ko:"형이상학을 경계하고, 통일된 과학·명료한 방법·가치중립적 검증을 신뢰하는 경험주의 쪽입니다.",en:"Wary of metaphysics, you trust unified science, clear method, and value-neutral verification."}},
+ {name:{ko:"구성적 경험론자",en:"Constructive Empiricist"}, fig:{ko:"반 프라센형",en:"van Fraassen-type"}, v:[-85,-20,-20,40,20,55,40], d:{ko:"이론을 '참'이 아니라 '눈에 보이는 것에 잘 맞는 것'으로 받아들이며, 그 너머의 단언은 보류합니다.",en:`You accept theories as fitting the observable rather than as "true," holding back on claims beyond it.`}},
+ {name:{ko:"역사주의·패러다임론자",en:"Historicist · Paradigm-theorist"}, fig:{ko:"쿤형",en:"Kuhn-type"}, v:[-10,-30,-75,-55,-20,-45,-50], d:{ko:"과학을 논리보다 역사·공동체·세계관의 흐름으로 읽으며, 발전을 진리 수렴과 분리합니다.",en:"You read science through history, community, and worldview, separating progress from convergence on truth."}},
+ {name:{ko:"인식적 무정부주의자",en:"Epistemic Anarchist"}, fig:{ko:"파이어아벤트형",en:"Feyerabend-type"}, v:[-20,-55,-65,-95,-85,-45,-60], d:{ko:"단 하나의 과학 방법도, 단 하나의 세계상도 거부합니다. 다양성과 방법의 자유를 발전의 동력으로 봅니다.",en:"You reject any single method or single world-picture, seeing diversity and methodological freedom as the engine of progress."}},
+ {name:{ko:"능동적 실재론·다원주의자",en:"Active Realist & Pluralist"}, fig:{ko:"장하석형",en:"Chang-type"}, v:[30,-85,-80,-40,-90,-80,-40], d:{ko:"실재는 믿되 '진리=대응' 도식을 넘어섭니다. 발전을 '할 수 있는 일의 확장'으로, 과학을 여러 접근의 적극적 배양으로 봅니다.",en:"Committed to reality but beyond truth-as-correspondence: you see progress as expanding capability and science as actively cultivating many approaches."}},
+ {name:{ko:"실험적 실재론자",en:"Experimental Realist"}, fig:{ko:"해킹·카트라이트형",en:"Hacking–Cartwright-type"}, v:[40,-10,-25,-25,-60,-80,-15], d:{ko:"표현보다 직접 해보는 실험을, 거대한 근본법칙보다 국소적 현장을 신뢰합니다. 실재성은 만질 수 있는 것에서 옵니다.",en:"You trust hands-on experiment over representation and local situations over grand laws. Reality is what you can handle."}},
+ {name:{ko:"가치적재 사회인식론자",en:"Value-laden Social Epistemologist"}, fig:{ko:"더글러스·롱기노형",en:"Douglas–Longino-type"}, v:[25,15,20,0,-30,-10,-88], d:{ko:"가치는 과학에서 떼어낼 수 없고, 객관성은 그 가치들을 다양하게·비판적으로 다루는 데서 나온다고 봅니다.",en:"Values can't be removed from science; objectivity comes from handling them diversely and critically."}},
+ {name:{ko:"표준 과학적 실재론자",en:"Standard Scientific Realist"}, fig:{ko:"실로스·키처형",en:"Psillos–Kitcher-type"}, v:[70,55,65,70,40,30,50], d:{ko:"잘 나가는 과학은 세상이 실제로 굴러가는 방식을 어느 정도 참되게 보여준다고 봅니다. 학계 주류에 가장 가깝습니다.",en:"You hold that successful science roughly truly reveals how the world works—closest to the academic mainstream."}},
 ];
 
 /* ===================== STATE & HELPERS ===================== */
 let L=(navigator.language||"ko").toLowerCase().startsWith("en")?"en":"ko";
 let screen="intro";
-let sharedUV=null;   // null = computed from answers; array = shared result
+let sharedUV=null;
 let lastUV=null;
 const tx=o=>o[L];
 const u=k=>U[L][k];
@@ -371,7 +337,6 @@ function applyLang(nl){
   document.getElementById('foot').innerHTML=u('foot');
 }
 
-/* ===================== INTRO ===================== */
 function renderIntro(){
   document.getElementById('i_kicker').textContent=u('kicker');
   document.getElementById('i_h1').innerHTML=u('h1');
@@ -397,18 +362,12 @@ function startQuiz(){
 function restart(){ if(confirm(u('restartConfirm'))) goFresh(); }
 function goFresh(){ location.href=location.href.split('#')[0]; }
 
-/* ===================== QUIZ ===================== */
 function renderQ(){
   const qi=order[cur],q=Q[qi];
   document.getElementById('qcount').textContent=u('qOf').replace('{a}',cur+1).replace('{b}',Q.length);
   document.getElementById('pbar').style.width=(cur/Q.length)*100+"%";
   document.getElementById('qnum').textContent="Q"+(cur+1);
   document.getElementById('qtext').textContent=tx(q.t);
-  const fn=document.getElementById('fnote');
-  if(q.g&&q.g.length){
-    fn.classList.remove('hidden');
-    fn.innerHTML=`<b>${u('terms')}</b> `+q.g.map(key=>`<span class="fi"><b>${tx(G[key].t)}</b> — ${tx(G[key].d)}</span>`).join("");
-  } else fn.classList.add('hidden');
   const box=document.getElementById('likert'); box.innerHTML="";
   LIKERT_V.forEach((val,i)=>{
     const b=document.createElement('button');
@@ -444,10 +403,7 @@ function profileFromUV(uv){
 }
 
 /* ===================== SHARE LINK ===================== */
-function buildShareURL(uv){
-  const code=uv.map(x=>Math.round(x)).join('_');
-  return location.href.split('#')[0]+'#r='+code;
-}
+function buildShareURL(uv){ return location.href.split('#')[0]+'#r='+uv.map(x=>Math.round(x)).join('_'); }
 function parseShare(){
   const m=location.hash.match(/r=(-?\d+(?:_-?\d+)*)/);
   if(!m) return null;
