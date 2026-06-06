@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유형 안내 — SciPhiScales</title>
+<meta name="description" content="과학철학 성향 테스트가 내놓는 아홉 유형, 일곱 축, 열일곱 철학자를 한자리에 모은 안내.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://studyingant.github.io/sciphiscales/types.html">
+<meta property="og:title" content="유형 안내 — SciPhiScales">
+<meta property="og:description" content="아홉 유형, 일곱 축, 열일곱 철학자를 한자리에.">
+<meta property="og:image" content="https://studyingant.github.io/sciphiscales/og-image.png">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,900;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3ead7; --paper-deep:#e7d9bb; --ink:#1c2434; --ink-soft:#41506b;
+    --line:#c9b893; --ochre:#b06a2c; --ochre-bright:#d4892f; --teal:#2f6b62;
+    --crimson:#8d2f3a; --indigo:#3a417a; --shadow:rgba(28,36,52,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(ellipse at 12% -10%, rgba(176,106,44,.10), transparent 45%),
+      radial-gradient(ellipse at 110% 8%, rgba(58,65,122,.10), transparent 45%),
+      var(--paper);
+    color:var(--ink); font-family:"Noto Sans KR",sans-serif; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.045;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .wrap{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:20px 22px 90px}
+  .serif{font-family:"Noto Serif KR",serif}
+  .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px}
+  .backlink{font-family:"Noto Serif KR",serif;font-size:14px;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+  .backlink:hover{color:var(--ink);border-color:var(--ink)}
+  .langbar{display:flex;gap:6px}
+  .langbtn{font-family:"Noto Serif KR",serif;font-size:12.5px;cursor:pointer;background:transparent;border:1.4px solid var(--line);color:var(--ink-soft);border-radius:99px;padding:5px 13px;transition:all .15s}
+  .langbtn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .kicker{font-family:"Noto Serif KR",serif;letter-spacing:.32em;font-size:12px;color:var(--ochre);text-transform:uppercase;font-weight:600}
+  h1{font-family:"Fraunces","Noto Serif KR",serif;font-weight:900;font-size:clamp(32px,6.4vw,50px);line-height:1.1;margin:.16em 0 .12em}
+  .sub{color:var(--ink-soft);font-size:15.5px;max-width:62ch}
+  .section-h{font-family:"Noto Serif KR",serif;font-weight:600;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--ochre);margin:40px 0 14px;display:flex;align-items:center;gap:12px}
+  .section-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  /* axes */
+  .axis{margin:0 0 14px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+  .axis .labels{display:flex;justify-content:space-between;font-size:14px;font-weight:700}
+  .axis .labels .l{color:var(--crimson)} .axis .labels .r{color:var(--indigo)}
+  .axis .gloss{font-size:13px;color:var(--ink-soft);margin-top:4px}
+  /* schools */
+  .type{border:1px solid var(--line);border-radius:4px;padding:18px 20px;margin:0 0 14px;background:linear-gradient(180deg, rgba(255,255,255,.32), rgba(255,255,255,.05));box-shadow:0 1px 0 rgba(255,255,255,.4) inset}
+  .type .name{font-family:"Noto Serif KR",serif;font-weight:600;font-size:21px}
+  .type .fig{color:var(--ochre);font-style:italic;font-size:15px;margin-left:6px}
+  .type .desc{font-size:14.5px;color:var(--ink);margin-top:7px}
+  .type .sig{font-size:12.5px;color:var(--ink-soft);margin-top:10px;padding-top:9px;border-top:1px dashed var(--line)}
+  .type .sig b{color:var(--ochre);font-weight:700}
+  .type .sig .tag{display:inline-block;margin:2px 6px 2px 0;padding:2px 9px;border-radius:99px;background:var(--paper-deep);font-weight:500;color:var(--ink)}
+  /* philosophers */
+  .phil{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px dashed var(--line)}
+  .phil:last-child{border-bottom:0}
+  .phil .who{font-family:"Noto Serif KR",serif;font-weight:600;font-size:17px;flex:0 0 auto;width:128px}
+  .phil .blurb{font-size:13.5px;color:var(--ink-soft)}
+  .foot{margin-top:46px;font-size:12px;color:var(--ink-soft);text-align:center;line-height:1.6}
+  .foot a{color:var(--ochre);font-weight:600;text-decoration:none}
+  @media(max-width:520px){ .phil{flex-direction:column;gap:2px} .phil .who{width:auto} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="backlink" id="backTop" href="index.html"></a>
+    <div class="langbar">
+      <button id="lkKO" class="langbtn" onclick="applyLang('ko')">한국어</button>
+      <button id="lkEN" class="langbtn" onclick="applyLang('en')">English</button>
+    </div>
+  </div>
+  <div class="kicker" id="kicker"></div>
+  <h1 id="title"></h1>
+  <p class="sub" id="sub"></p>
+
+  <div class="section-h" id="h_types"></div>
+  <div id="types"></div>
+
+  <div class="section-h" id="h_axes"></div>
+  <div id="axes"></div>
+
+  <div class="section-h" id="h_phil"></div>
+  <div id="phils"></div>
+
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+const U={
+ ko:{
+  back:"← 테스트로", kicker:"SciPhiScales · 유형 안내",
+  title:"유형 안내",
+  sub:"이 테스트가 내놓는 결과를 한자리에 모았습니다. 일곱 개의 축으로 측정해 아홉 유형 중 하나로 분류하고, 열일곱 철학자 중 생각이 가장 가까운 이를 찾아줍니다.",
+  hTypes:"아홉 유형", hAxes:"일곱 축", hPhil:"열일곱 철학자",
+  sig:"두드러진 성향", strong:"강", mid:"중",
+  foot:`SciPhiScales — 재미를 위한 자기평가 도구입니다. <a href="index.html">테스트 하러 가기 →</a>`,
+ },
+ en:{
+  back:"← To the test", kicker:"SciPhiScales · The Types",
+  title:"The Types",
+  sub:"Everything this test can produce, in one place. It measures you on seven axes, sorts you into one of nine types, and finds the philosopher among seventeen who thinks most like you.",
+  hTypes:"Nine Types", hAxes:"Seven Axes", hPhil:"Seventeen Philosophers",
+  sig:"Defining leanings", strong:"strong", mid:"moderate",
+  foot:`SciPhiScales — a self-assessment for fun. <a href="index.html">Take the test →</a>`,
+ }
+};
+
+const AXES={
+ realism:  {neg:{ko:"반실재론",en:"Anti-realism"}, pos:{ko:"실재론",en:"Realism"}, gloss:{ko:"눈에 안 보이는 것(전자·유전자 등)이 진짜 존재한다고 보는가, 아니면 쓸모 있는 도구로만 보는가",en:"Do unseen things (electrons, genes) really exist, or are they just useful tools?"}},
+ truth:    {neg:{ko:"실용·정합적 진리",en:"Pragmatic / coherence truth"}, pos:{ko:"대응적 진리",en:"Correspondence truth"}, gloss:{ko:"진리는 ‘실제 세상과 들어맞음’인가, ‘써먹어 보니 잘 통함’인가",en:"Is truth 'matching the real world,' or 'what works when you use it'?"}},
+ progress: {neg:{ko:"불연속·단절",en:"Discontinuity"}, pos:{ko:"수렴적 진보",en:"Convergent progress"}, gloss:{ko:"과학은 진리에 점점 다가가는가, 아니면 큰 전환을 거치며 다룰 수 있는 일이 늘어나는가",en:"Does science move closer to truth, or expand what we can do through big shifts?"}},
+ method:   {neg:{ko:"정해진 방법 없음",en:"No fixed method"}, pos:{ko:"방법 규칙주의",en:"Rule-governed method"}, gloss:{ko:"모든 경우에 통하는 단 하나의 과학 방법이 있는가",en:"Is there one scientific method that works in every case?"}},
+ plurality:{neg:{ko:"다원주의",en:"Pluralism"}, pos:{ko:"하나로 통합",en:"Monism"}, gloss:{ko:"세상에 대한 단 하나의 통합된 설명이 있는가, 분야마다 다른 조각보인가",en:"Is there one unified account of the world, or a patchwork that differs by field?"}},
+ practice: {neg:{ko:"실험·해보기 중심",en:"Experiment-centered"}, pos:{ko:"이론 중심",en:"Theory-centered"}, gloss:{ko:"이론·표현이 먼저인가, 직접 해보고 만지는 실험·실천이 먼저인가",en:"Does theory come first, or hands-on experiment and practice?"}},
+ values:   {neg:{ko:"가치가 섞임",en:"Value-laden"}, pos:{ko:"가치와 무관",en:"Value-free"}, gloss:{ko:"좋은 과학은 가치와 무관해야 하는가, 가치는 어차피 끼어드는가",en:"Should good science be free of values, or do values inevitably enter?"}},
+};
+const AXIS_KEYS=Object.keys(AXES);
+
+const SCHOOLS=[
+ {name:{ko:"비판적 합리주의자",en:"Critical Rationalist"}, fig:{ko:"포퍼형",en:"Popper-type"}, v:[70,60,85,90,30,40,70], d:{ko:"‘틀릴 수 있어야 과학’이라 믿습니다. 대담하게 추측하고 가차없이 시험하며 진리에 다가간다고 봅니다.",en:"You believe science must be falsifiable. It nears truth through bold conjecture and ruthless testing."}},
+ {name:{ko:"논리경험주의자",en:"Logical Empiricist"}, fig:{ko:"카르납형",en:"Carnap-type"}, v:[-30,-10,50,75,85,50,85], d:{ko:"형이상학을 경계하고, 통일된 과학·명료한 방법·가치중립적 검증을 신뢰하는 경험주의 쪽입니다.",en:"Wary of metaphysics, you trust unified science, clear method, and value-neutral verification."}},
+ {name:{ko:"구성적 경험론자",en:"Constructive Empiricist"}, fig:{ko:"반 프라센형",en:"van Fraassen-type"}, v:[-85,-20,-20,40,20,55,40], d:{ko:"이론을 ‘참’이 아니라 ‘눈에 보이는 것에 잘 맞는 것’으로 받아들이며, 그 너머의 단언은 보류합니다.",en:`You accept theories as fitting the observable rather than as "true," holding back on claims beyond it.`}},
+ {name:{ko:"역사주의·패러다임론자",en:"Historicist · Paradigm-theorist"}, fig:{ko:"쿤형",en:"Kuhn-type"}, v:[-10,-30,-75,-55,-20,-45,-50], d:{ko:"과학을 논리보다 역사·공동체·세계관의 흐름으로 읽으며, 발전을 진리 수렴과 분리합니다.",en:"You read science through history, community, and worldview, separating progress from convergence on truth."}},
+ {name:{ko:"인식적 무정부주의자",en:"Epistemic Anarchist"}, fig:{ko:"파이어아벤트형",en:"Feyerabend-type"}, v:[-20,-55,-65,-95,-85,-45,-60], d:{ko:"단 하나의 과학 방법도, 단 하나의 세계상도 거부합니다. 다양성과 방법의 자유를 발전의 동력으로 봅니다.",en:"You reject any single method or single world-picture, seeing diversity and methodological freedom as the engine of progress."}},
+ {name:{ko:"능동적 실재론·다원주의자",en:"Active Realist & Pluralist"}, fig:{ko:"장하석형",en:"Chang-type"}, v:[30,-85,-80,-40,-90,-80,-40], d:{ko:"실재는 믿되 ‘진리=대응’ 도식을 넘어섭니다. 발전을 ‘할 수 있는 일의 확장’으로, 과학을 여러 접근의 적극적 배양으로 봅니다.",en:"Committed to reality but beyond truth-as-correspondence: you see progress as expanding capability and science as actively cultivating many approaches."}},
+ {name:{ko:"실험적 실재론자",en:"Experimental Realist"}, fig:{ko:"해킹·카트라이트형",en:"Hacking–Cartwright-type"}, v:[40,-10,-25,-25,-60,-80,-15], d:{ko:"표현보다 직접 해보는 실험을, 거대한 근본법칙보다 국소적 현장을 신뢰합니다. 실재성은 만질 수 있는 것에서 옵니다.",en:"You trust hands-on experiment over representation and local situations over grand laws. Reality is what you can handle."}},
+ {name:{ko:"가치적재 사회인식론자",en:"Value-laden Social Epistemologist"}, fig:{ko:"더글러스·롱기노형",en:"Douglas–Longino-type"}, v:[25,15,20,0,-30,-10,-88], d:{ko:"가치는 과학에서 떼어낼 수 없고, 객관성은 그 가치들을 다양하게·비판적으로 다루는 데서 나온다고 봅니다.",en:"Values can't be removed from science; objectivity comes from handling them diversely and critically."}},
+ {name:{ko:"표준 과학적 실재론자",en:"Standard Scientific Realist"}, fig:{ko:"실로스·키처형",en:"Psillos–Kitcher-type"}, v:[70,55,65,70,40,30,50], d:{ko:"잘 나가는 과학은 세상이 실제로 굴러가는 방식을 어느 정도 참되게 보여준다고 봅니다. 학계 주류에 가장 가깝습니다.",en:"You hold that successful science roughly truly reveals how the world works—closest to the academic mainstream."}},
+];
+
+const PHIL=[
+ {n:{ko:"칼 포퍼",en:"Karl Popper"}, b:{ko:"‘틀릴 수 있어야 과학이다’(반증). 틀린 걸 걸러내며 진리에 다가간다고 본 비판적 합리주의의 상징.",en:"'It's science only if it can be proven wrong.' Believed we near truth by weeding out error—the emblem of critical rationalism."}},
+ {n:{ko:"토머스 쿤",en:"Thomas Kuhn"}, b:{ko:"패러다임과 혁명. 발전을 ‘진리로의 수렴’이 아니라 세계관의 교체로 다시 그렸다.",en:"Paradigms and revolutions. Recast progress as a change of worldview rather than convergence on truth."}},
+ {n:{ko:"임레 라카토시",en:"Imre Lakatos"}, b:{ko:"포퍼와 쿤 사이. 연구 흐름이 ‘잘 나가는지/한물갔는지’로 합리성을 사후 평가한다.",en:"Between Popper and Kuhn: judges rationality by whether a research line is progressing or degenerating."}},
+ {n:{ko:"파울 파이어아벤트",en:"Paul Feyerabend"}, b:{ko:"‘무엇이든 좋다.’ 정해진 방법을 거부하고 다양한 접근을 옹호한 인식적 무정부주의자.",en:`"Anything goes." Rejected any fixed method and championed many approaches—the epistemological anarchist.`}},
+ {n:{ko:"루돌프 카르납",en:"Rudolf Carnap"}, b:{ko:"논리경험주의. 형이상학을 경계하고 통일과학과 가치중립적 검증을 추구했다.",en:"Logical empiricism. Wary of metaphysics; pursued unified science and value-neutral verification."}},
+ {n:{ko:"앙리 푸앵카레",en:"Henri Poincaré"}, b:{ko:"규약주의. 어떤 기본 규칙은 참/거짓이 아니라 우리가 편해서 정한 약속이라 보았다.",en:"Conventionalism. Saw certain ground rules as conventions of convenience, not truths."}},
+ {n:{ko:"피에르 뒤엠",en:"Pierre Duhem"}, b:{ko:"가설은 홀로 검증되지 않는다(전체론). 물리학을 진리보다 현상의 정리로 본 도구주의 성향.",en:"Hypotheses aren't tested alone (holism). Leaned instrumentalist, seeing physics as organizing phenomena rather than finding truth."}},
+ {n:{ko:"W.V.O. 콰인",en:"W.V.O. Quine"}, b:{ko:"믿음의 그물망과 자연주의. 증거가 이론을 완전히 결정하지 못한다고 본 전체론자.",en:"Web of belief and naturalism. A holist who held that evidence never fully fixes theory."}},
+ {n:{ko:"바스 반 프라센",en:"Bas van Fraassen"}, b:{ko:"구성적 경험론. 과학의 목표는 진리가 아니라 ‘눈에 보이는 것에 잘 맞음’이라 본 합리적 반실재론자.",en:"Constructive empiricism. A rational anti-realist: science aims at fitting the observable, not at truth."}},
+ {n:{ko:"이언 해킹",en:"Ian Hacking"}, b:{ko:"‘써먹을 수 있으면 실재한다.’ 표현이 아니라 직접 다루는 실험을 실재의 기준으로 삼았다.",en:`"If you can use it, it's real." Made hands-on experiment, not representation, the test of reality.`}},
+ {n:{ko:"낸시 카트라이트",en:"Nancy Cartwright"}, b:{ko:"근본법칙도 통제된 상황에서만 맞는다. 세계를 조각보로 본 반근본주의 다원론자.",en:"Even fundamental laws hold only in controlled setups. A pluralist who sees the world as a patchwork."}},
+ {n:{ko:"필립 키처",en:"Philip Kitcher"}, b:{ko:"실재론과 자연주의를 지키되, ‘잘 정돈된 과학’에서 가치와 민주주의를 끌어들였다.",en:"Keeps realism and naturalism, yet brings values and democracy into a 'well-ordered' science."}},
+ {n:{ko:"마이클 스트래븐스",en:"Michael Strevens"}, b:{ko:"‘철의 규칙’ — 무슨 논쟁이든 실험으로만 푼다는 고집이 과학을 작동하게 만든다.",en:"The 'iron rule'—a stubborn insistence on settling disputes by experiment alone is what makes science work."}},
+ {n:{ko:"장하석",en:"Hasok Chang"}, b:{ko:"능동적 실재론·실천 중심 다원주의. 진리 ‘대응’을 넘어, 진보를 ‘할 수 있는 일의 확장’으로 다시 정의한다.",en:"Active realism and practice-based pluralism. Beyond truth-as-correspondence, redefines progress as expanding what we can do."}},
+ {n:{ko:"미켈라 마시미",en:"Michela Massimi"}, b:{ko:"관점적 실재론. 모든 지식은 관점에 기대지만, 그렇다고 진리가 없는 건 아니다.",en:"Perspectival realism. All knowledge rests on a viewpoint, yet that doesn't mean there's no truth."}},
+ {n:{ko:"헤더 더글러스",en:"Heather Douglas"}, b:{ko:"틀렸을 때 피해가 크면, 증거가 충분한지 판단하는 데에 윤리·사회적 고려가 정당하게 들어온다.",en:"When error is costly, ethical and social concerns legitimately enter the judgment of whether evidence is enough."}},
+ {n:{ko:"헬렌 롱기노",en:"Helen Longino"}, b:{ko:"객관성은 개인이 가치를 비워서가 아니라, 다양한 입장이 비판적으로 부딪혀서 생긴다.",en:"Objectivity comes not from individuals being value-free, but from diverse viewpoints clashing critically."}},
+];
+
+let L=(navigator.language||"ko").toLowerCase().startsWith("en")?"en":"ko";
+const tx=o=>o[L]; const u=k=>U[L][k];
+function updateToggle(){ document.getElementById('lkKO').classList.toggle('active',L==='ko'); document.getElementById('lkEN').classList.toggle('active',L==='en'); }
+function applyLang(nl){ L=nl; document.documentElement.lang=L; updateToggle(); render(); }
+
+function signature(v){
+  // top 3 axes by absolute leaning -> pole label + intensity tag
+  const idx=v.map((x,i)=>i).sort((a,b)=>Math.abs(v[b])-Math.abs(v[a])).slice(0,3);
+  return idx.map(i=>{
+    const a=AXES[AXIS_KEYS[i]]; const label = v[i]>=0 ? tx(a.pos) : tx(a.neg);
+    const intens = Math.abs(v[i])>=65 ? u('strong') : u('mid');
+    return `<span class="tag">${label} <span style="color:var(--ink-soft)">(${intens})</span></span>`;
+  }).join("");
+}
+
+function render(){
+  document.getElementById('backTop').textContent=u('back');
+  document.getElementById('kicker').textContent=u('kicker');
+  document.getElementById('title').textContent=u('title');
+  document.getElementById('sub').textContent=u('sub');
+  document.getElementById('h_types').textContent=u('hTypes');
+  document.getElementById('h_axes').textContent=u('hAxes');
+  document.getElementById('h_phil').textContent=u('hPhil');
+  document.getElementById('foot').innerHTML=u('foot');
+
+  document.getElementById('types').innerHTML = SCHOOLS.map(s=>`
+    <div class="type">
+      <div><span class="name">${tx(s.name)}</span><span class="fig">${tx(s.fig)}</span></div>
+      <div class="desc">${tx(s.d)}</div>
+      <div class="sig"><b>${u('sig')}</b> &nbsp;${signature(s.v)}</div>
+    </div>`).join("");
+
+  document.getElementById('axes').innerHTML = AXIS_KEYS.map(k=>{
+    const a=AXES[k];
+    return `<div class="axis">
+      <div class="labels"><span class="l">${tx(a.neg)}</span><span class="r">${tx(a.pos)}</span></div>
+      <div class="gloss">${tx(a.gloss)}</div></div>`;
+  }).join("");
+
+  document.getElementById('phils').innerHTML = PHIL.map(p=>`
+    <div class="phil"><div class="who">${tx(p.n)}</div><div class="blurb">${tx(p.b)}</div></div>`).join("");
+}
+
+updateToggle();
+render();
+</script>
+</body>
+</html>
