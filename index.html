@@ -61,7 +61,7 @@
   .axes-list .vs{color:var(--ink-soft);font-size:12px}
   .meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin:22px 0 8px;font-size:13.5px;color:var(--ink-soft)}
   .meta b{color:var(--ink);font-weight:700}
-  .btn{font-family:"Noto Serif KR",serif;font-weight:600;cursor:pointer;background:var(--ink);color:var(--paper);border:0;border-radius:3px;padding:14px 28px;font-size:17px;letter-spacing:.02em;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 6px 18px -8px var(--shadow)}
+  .btn{font-family:"Noto Serif KR",serif;font-weight:600;cursor:pointer;display:inline-block;text-decoration:none;background:var(--ink);color:var(--paper);border:0;border-radius:3px;padding:14px 28px;font-size:17px;letter-spacing:.02em;transition:transform .15s ease, box-shadow .15s ease;box-shadow:0 6px 18px -8px var(--shadow)}
   .btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px var(--shadow)}
   .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
   .btn.ochre{background:var(--ochre)}
@@ -140,7 +140,7 @@
       <ul class="axes-list" id="axisPreview"></ul>
     </div>
     <div class="meta" id="i_meta"></div>
-    <div style="margin-top:18px"><button class="btn ochre" id="i_start" onclick="startQuiz()"></button></div>
+    <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px"><button class="btn ochre" id="i_start" onclick="startQuiz()"></button><a class="btn ghost" id="i_types" href="types.html"></a></div>
     <p class="note" id="i_note"></p>
   </section>
 
@@ -172,7 +172,7 @@ const U={
   sub:"어려운 용어는 빼고 쉽게. 42개의 질문에 답하면 당신의 과학관이 일곱 개의 축 위에 놓이고, 생각이 가장 비슷한 과학철학자가 드러납니다.",
   axesHead:"측정하는 일곱 축",
   meta:`<span><b>42</b> 문항</span><span><b>5</b> 점 척도</span><span><b>17</b> 인의 철학자</span><span>약 <b>6–8</b> 분</span>`,
-  start:"테스트 시작 →",
+  start:"테스트 시작 →", typesBtn:"전체 유형 살펴보기 →",
   note:"각 문항이 어떤 철학자의 생각인지는 끝까지 숨겨지며, 결과 화면에서 전부 공개됩니다. 문항은 어려운 용어 없이 쉽게 풀어 썼습니다. 깊이 고민하기보다 즉각적인 직감으로 답하실수록 정확합니다.",
   qOf:"문항 {a} / {b}", prev:"← 이전", top:"처음으로", restartConfirm:"처음부터 다시 시작할까요?",
   yourTypeKick:"당신의 유형", axesSec:"일곱 축 위의 당신", closeSec:"생각이 가장 비슷한 철학자", simLabel:"근접도",
@@ -197,7 +197,7 @@ const U={
   sub:"Plain words, no jargon. Answer 42 questions and your view of science is placed on seven axes—and the philosopher who thinks most like you is revealed.",
   axesHead:"The Seven Axes",
   meta:`<span><b>42</b> items</span><span><b>5</b>-point scale</span><span><b>17</b> philosophers</span><span>≈ <b>6–8</b> min</span>`,
-  start:"Begin the test →",
+  start:"Begin the test →", typesBtn:"Browse all the types →",
   note:"Which philosopher each item comes from stays hidden until the results. Items are written in plain language with no jargon. Answer by quick gut feeling rather than overthinking for the most accurate result.",
   qOf:"Item {a} / {b}", prev:"← Back", top:"Start over", restartConfirm:"Start over from the beginning?",
   yourTypeKick:"Your Type", axesSec:"You on the Seven Axes", closeSec:"Philosophers Who Think Most Like You", simLabel:"match",
@@ -344,6 +344,7 @@ function renderIntro(){
   document.getElementById('i_axesHead').textContent=u('axesHead');
   document.getElementById('i_meta').innerHTML=u('meta');
   document.getElementById('i_start').textContent=u('start');
+  document.getElementById('i_types').textContent=u('typesBtn');
   document.getElementById('i_note').textContent=u('note');
   const ul=document.getElementById('axisPreview'); ul.innerHTML="";
   AXIS_KEYS.forEach(k=>{
@@ -472,6 +473,7 @@ function renderResults(override){
   if(!fromShare) act+=`<button class="btn ochre" onclick='copySummary(${JSON.stringify(copyPayload)})'>${u('copy')}</button>`;
   act+=`<button class="btn" onclick="copyLink()">${u('shareLink')}</button>`;
   act+=`<button class="btn ghost" onclick="saveImage()">${u('saveImage')}</button>`;
+  act+=`<a class="btn ghost" href="types.html">${u('typesBtn')}</a>`;
   act+= fromShare ? `<button class="btn ghost" onclick="goFresh()">${u('tryIt')}</button>`
                   : `<button class="btn ghost" onclick="goFresh()">${u('again')}</button>`;
   act+=`</div>`; h+=act;
